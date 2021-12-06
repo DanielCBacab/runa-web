@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* VARIABLES GENERALES */
+
+:root {
+    /* Primary Colors */
+    --primary-color: #b4903a;
+    --primary-color-light: #e9c068;
+    --primary-color-dark: #816306;
+    /* Secondary Colors */
+    --secondary-color: #001631;
+    --secondary-color-light: #2c3c5b;
+    --secondary-color-dark: #00000b;
+    /* Text Colors */
+    --text-title: #b4903a;
+    --text-color: #37474f;
+    --text-light: #c7c7c7;
+    --grey-light: #f2ecec;
+    /* Fonts */
+    --primary-font:  'Philosopher', sans-serif;
+    --secondary-font: 'Outfit', sans-serif;
+}
+
+
+/* CLASES PLANTILLA */
+
+.primary-txt {
+    color: var(--primary-color) !important;
+}
+
+.primary-bg {
+    background-color: var(--primary-color) !important;
+}
+
+.primary-txt-light {
+    color: var(--primary-color-light) !important;
+}
+
+.primary-bg-light {
+    background-color: var(--primary-color-light) !important;
+}
+
+.primary-txt-dark {
+    color: var(--primary-color-dark) !important;
+}
+
+.primary-bg-dark {
+    background-color: var(--primary-color-dark) !important;
+}
+
+.secondary-txt {
+    color: var(--secondary-color) !important;
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color) !important;
+}
+
+.secondary-txt-light {
+    color: var(--secondary-color-light) !important;
+}
+
+.secondary-bg-light {
+    background-color: var(--secondary-color-light) !important;
+}
+
+.secondary-txt-dark {
+    color: var(--secondary-color-dark) !important;
+}
+
+.secondary-bg-dark {
+    background-color: var(--secondary-color-dark) !important;
+}
+
+.gray-bg {
+    background-color: var(--grey-light);
+}
+
+.light-txt {
+    color: var(--text-light) !important;
+}
+
+.title-txt {
+    color: var(--text-title) !important;
+}
+
+.color-txt {
+    color: var(--text-color) !important;
+}
+
+
+/* TERMINA VARIABLES GENERALES */
+
+h1 {
+    font-family: var(--primary-font)  !important;
+    font-weight: 300 !important;
+    font-size: 6.75rem;
+    letter-spacing: -1.5px;
+
+    
+}
+
+h2 {
+    font-family: var(--primary-font)  !important;
+    font-weight: 300 !important;
+    font-size: 4.25rem;
+    letter-spacing: -0.5px;
+
+
+}
+
+h3 {
+    font-family: var(--primary-font)  !important;
+    font-weight: normal !important;
+    font-size: 3.375rem;
+
+}
+
+h4 {
+    font-family: var(--primary-font)  !important;
+    font-weight: normal !important;
+    font-size: 2.375rem;
+    letter-spacing: 0.25px;
+
+}
+
+h5 {
+    font-family: var(--primary-font) !important;
+    font-weight: normal !important;
+    font-size: 1.688rem;
+
+}
+
+h6 {
+    font-family: var(--primary-font)  !important;
+    font-weight: 500;
+    font-size: 1.438rem;
+    letter-spacing: 0.15px;
+
+}
+
+.subtitle{
+    font-family: var(--primary-font)  !important;
+    font-weight: 500;
+    font-size: 1.125rem;
+    letter-spacing: 0.15px;
+    line-height: 140%; 
+}
+
+.body-uno, p{
+    font-family: var(--secondary-font)  !important;
+    font-weight: 500;
+    /*font-size: 1.125rem;*/
+    letter-spacing: 0.5px;
+
+}
+
+.btn {
+    font-family: var(--secondary-font) !important;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    line-height: 140%; 
+}
+
+.caption{
+    font-family: var(--secondary-font)  !important;
+    font-weight: 500;
+    font-size: 0.813rem;
+    letter-spacing: 0.4px;
+    line-height: 140%;   
+}
+
+.overline{
+    font-family: var(--secondary-font)  !important;
+    font-weight: 500;
+    font-size: 0.688rem;
+    letter-spacing: 1.5px;
+    line-height: 140%;   
+}
+
+/*  RUNA FOTOS  */
+.runa-title-left{
+    color: #ffffff36;
+    font-size: 10rem;
+    position: absolute;
+    top: -80px;
+    z-index: 20;
+
+}
+
+.runa-title-right{
+    color: #ffffff36;
+    font-size: 10rem;
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    text-align: right;
+    z-index: 20;
+}
+
+/*  RUNA FOTOS  */
+
+/*  CONEXIÓN RUNA FOTOS */
+
+
+
+/* Formulario runa  */
+.runa-form{
+    border-color: #f2ecec;
+    border-width: 1px;
+    border-style: solid;
+    padding: 35px 50px;
+}
+
+.runa-form textarea, .runa-form input{
+    background-color: #00163187;
+    border-color: #00163187;
+    color: white;
+}
+.runa-form textarea:focus, .runa-form input:focus{
+    background-color: #02265287;
+    border-color: #00163187;
+    color: white;
+}
+/* Formulario runa  */
+
+.banner-top{
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus{
+    background-image: url('../img/aboutus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.amenities{
+    background-color: #00000b;
+    padding: 50px;
+    z-index: 10;
+    border-style: solid;
+    border:2px solid #000;
+    outline: 1px solid var(--primary-color);
+    outline-offset: -30px;
+    
+}
+
+.wood1{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    top: 0;
+    left: -10px;
+}
+
+.wood2{
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+    width: 650px;
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+}
+
+.leaf1{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 500px;
+    height: auto;
+    top: 0;
+    right: 0px;
+}
+
+.leaf2{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 550px;
+    height: auto;
+    bottom: 0;
+    left: -10px;
+}

@@ -1,12 +1,25 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import owl from "../img/owl.png";
+import wood from "../img/wood.png";
+import wood2 from "../img/wood2.png";
+import leaf from "../img/leaf.png";
+import leaf2 from "../img/leaf2.png";
 
 export default function Amenities() {
   return (
-    <Row className="justify-content-center vh-100">
-      <Col md={8}>
+    <Row className="justify-content-center align-items-center secondary-bg text-light position-relative py-5 g-0">
+      <img src={wood} className="wood1" />
+      <img src={wood2} className="wood2" />
+      <img src={leaf} className="leaf1" />
+      <img src={leaf2} className="leaf2" />
+      <h2 className="runa-title-right">Amenidades</h2>
+      <Col md={8} className="amenities my-5">
         <Row>
-          <Col md={12}>
+          <Col md={12} className="mb-4 text-center">
+            <img src={owl} className="my-5" />
+          </Col>
+          <Col md={12} className="mb-4">
             <p>
               El respeto hacia la naturaleza es la característica principal de
               nuestros terrenos ecológicos residenciales y comerciales que van

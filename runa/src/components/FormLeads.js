@@ -3,61 +3,57 @@ import { Form, Button } from "react-bootstrap";
 
 export default function FormLeads() {
   return (
-    <Form>
-      <h3>¡Regístrate para empezar a invertir!</h3>
+    <Form className="text-center runa-form runa-form2">
+      
+      <h3 className="primary-txt">¡Regístrate!</h3>
       <Form.Group>
-        <Form.Label>Nombre completo</Form.Label>
         <Form.Control
           className="mb-3"
           type="text"
           id="name"
-          placeholder="Ej. Juan Pérez"
+          placeholder="Nombre completo"
           required
         ></Form.Control>
       </Form.Group>
       <Form.Group>
-        <Form.Label>Teléfono a 10 dígitos</Form.Label>
         <Form.Control
           className="mb-3"
           type="tel"
           id="phone"
-          placeholder="Ej. 5544778866"
+          placeholder="Teléfono"
         ></Form.Control>
       </Form.Group>
       <Form.Group>
-        <Form.Label>Correo electrónico</Form.Label>
         <Form.Control
           className="mb-3"
           type="email"
           id="email"
-          placeholder="Ej. juanperez@mail.com"
+          placeholder="Correo electrónico"
         ></Form.Control>
       </Form.Group>
-      <Form.Group>
-        <Form.Label>Ciudad</Form.Label>
+      <Form.Group>  
         <Form.Control
           className="mb-3"
           type="text"
           id="city"
-          placeholder="Ej. Ciudad de México"
+          placeholder="Ciudad"
         ></Form.Control>
       </Form.Group>
       <Form.Group>
-        <Form.Label>¿Dudas o comentarios?</Form.Label>
         <Form.Control
           className="mb-3"
           type="email"
           id="email"
-          placeholder="Escribe tu mensaje por favor."
+          placeholder="Mensaje"
           as="textarea"
           rows={3}
         ></Form.Control>
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="warning" type="submit" className="btn-lg">
         Enviar formulario
       </Button>
       <br />
-      <small>
+      <small className="text-white mt-5">
         Al enviar el fomulario aceptas nuestras Políticas de Privacidad.
       </small>
     </Form>

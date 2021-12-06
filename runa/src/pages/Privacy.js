@@ -6,9 +6,8 @@ import Container from "react-bootstrap/Container";
 
 export default function Privacy() {
   return (
-    <React.Fragment>
-      <NavRuna />
       <Container fluid>
+        <NavRuna />
         {/* TÍTULO DE POLITICAS DE PRIVACIDAD */}
         <Row className="justify-content-center">
           <Col md={10} className="text-center">
@@ -176,6 +175,6 @@ export default function Privacy() {
         </Row>
         <Footer />
       </Container>
-    </React.Fragment>
+
   );
 }
