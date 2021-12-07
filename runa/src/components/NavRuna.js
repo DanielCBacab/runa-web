@@ -1,26 +1,25 @@
 import React from "react";
-import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../img/simple-logo.svg";
 
 const nav = [
   { link: "/", content: "Inicio" },
-  { link: "#nosotros", content: "Nosotros" },
-  { link: "#amenidades", content: "Amenidades" },
-  { link: "#financiamiento", content: "Financiamiento" },
-  { link: "#masterplan", content: "Masterplan" },
-  { link: "#galeria", content: "Galería" },
-  { link: "#contacto", content: "Contacto" },
+  { link: "/#nosotros", content: "Nosotros" },
+  { link: "/#amenidades", content: "Amenidades" },
+  { link: "/#financiamiento", content: "Financiamiento" },
+  { link: "/#masterplan", content: "Masterplan" },
+  { link: "/#contacto", content: "Contacto" },
 ];
 
 export default function NavRuna() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="/" className="text-light me-auto">
           <img
             src={logo}
-            width="30"
-            height="30"
+            width="38"
+            height="38"
             className="d-inline-block align-top"
             alt="Runa Residencial"
           />
@@ -34,7 +33,7 @@ export default function NavRuna() {
             {nav.map((nav) => (
               <Nav.Link
                 className="text-light mx-md-3 primary-txt"
-                to={nav.link}
+                href={nav.link}
               >
                 {nav.content}
               </Nav.Link>

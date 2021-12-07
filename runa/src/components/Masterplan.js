@@ -1,36 +1,53 @@
 import React from "react";
-import { Row, Col, Button, Ratio } from "react-bootstrap";
+import { Row, Col, Ratio } from "react-bootstrap";
+import start from "../img/runa-estrella.png";
+import disponible from "../img/mp-diamante-oro.svg";
+import nodisponible from "../img/mp-diamante-cobalto.svg";
+import vendido from "../img/mp-diamante.svg";
 
 export default function Masterplan() {
   return (
-    <Row className="justify-content-center align-items-center secondary-bg g-0 position-relative p-5">
-      <Col md={12} className="my-5">
-        <h2 className="runa-title-right">Planes</h2>
-      </Col>
+    <Row
+      className="justify-content-center align-items-center secondary-bg g-0 position-relative p-5 masterplan"
+      id="masterplan"
+    >
+      <h2 className="runa-title-right">Planes</h2>
+
       <Col md={3}></Col>
       <Col md={4}>
         <h2 className="text-center primary-txt">Masterplan</h2>
       </Col>
-      <Col md={3} className="text-light">
+      <Col md={3} className="text-light align-items-center">
         <Row className="g-0">
           <Col>
-            <p>Disponible</p>
+            <p>
+              <img src={disponible} width="15px" /> Disponible
+            </p>
           </Col>
           <Col>
-            <p>Apartado</p>
+            <p>
+              <img src={nodisponible} width="15px" /> Apartado
+            </p>
           </Col>
           <Col>
-            <p>Vendido</p>
+            <p>
+              <img src={vendido} width="15px" /> Vendido
+            </p>
           </Col>
         </Row>
       </Col>
-      <Col md={10} className="my-5">
-        <Ratio aspectRatio="16x9">
-          <iframe src="https://admin.gaiahabitat.com/planmaestroactualizado/1"></iframe>
+      <Col md={10} className="p-5 ">
+        <Ratio aspectRatio="21x9">
+          <iframe
+            src="https://admin.gaiahabitat.com/planmaestroactualizado/1"
+            scrolling="no"
+          ></iframe>
         </Ratio>
       </Col>
       <Col md={10} className="justify-content-end d-flex">
-        <Button className="align-self-end">Volver al inicio</Button>
+        <a className="align-self-end btn btn-link text-decoration-none text-light">
+          <img src={start} width="25px" /> Volver al inicio
+        </a>
       </Col>
     </Row>
   );

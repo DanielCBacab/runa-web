@@ -9,7 +9,6 @@ import Amenities from "../components/Amenities";
 import Projects from "../components/Projects";
 import FinantialPlans from "../components/FinantialPlans";
 import Masterplan from "../components/Masterplan";
-import Ubication from "../components/Ubication";
 import Footer from "../components/Footer";
 
 export default function App() {
@@ -23,8 +22,8 @@ export default function App() {
       <FinantialPlans />
       <Masterplan />
       {/*<Gallery />
-        <Ubication />
-        <Footer />*/}
+        >*/}
+      <Footer />
     </Container>
   );
 }

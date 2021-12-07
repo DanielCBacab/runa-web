@@ -8,7 +8,10 @@ import leaf2 from "../img/leaf2.png";
 
 export default function Amenities() {
   return (
-    <Row className="justify-content-center align-items-center secondary-bg text-light position-relative py-5 g-0">
+    <Row
+      className="justify-content-center align-items-center secondary-bg text-light position-relative py-5 g-0"
+      id="amenidades"
+    >
       <img src={wood} className="wood1" />
       <img src={wood2} className="wood2" />
       <img src={leaf} className="leaf1" />

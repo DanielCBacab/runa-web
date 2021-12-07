@@ -6,9 +6,18 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import logo from "../img/logo.svg";
 
 const icons = [
-  { iconName: <FaFacebook />, link: "#facebook" },
-  { iconName: <FaYoutube />, link: "#youtube" },
-  { iconName: <FaInstagram />, link: "#instagram" },
+  {
+    iconName: <FaFacebook />,
+    link: "https://www.facebook.com/Runa-Residencial-111632624638551",
+  },
+  {
+    iconName: <FaYoutube />,
+    link: "https://www.youtube.com/channel/UCmVPuCoiuVtN_I-gLQ2dW8g",
+  },
+  {
+    iconName: <FaInstagram />,
+    link: "https://www.instagram.com/runaresidencial/",
+  },
 ];
 
 export default function BannerTop() {
@@ -22,7 +31,9 @@ export default function BannerTop() {
               size: "2.688rem",
             }}
           >
-            <a href={icons.link}>{icons.iconName}</a>
+            <a href={icons.link} target="_blank">
+              {icons.iconName}
+            </a>
           </IconContext.Provider>
         ))}
       </Col>

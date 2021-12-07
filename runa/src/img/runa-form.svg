@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="555" viewBox="0 0 552 555">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke: #c48c2d;
+        stroke-width: 2.51px;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-width: 0.44px;
+      }
+    </style>
+  </defs>
+  <circle id="Elipse_2" data-name="Elipse 2" class="cls-1" cx="78" cy="94" r="4.281"/>
+  <circle id="Elipse_2_copia" data-name="Elipse 2 copia" class="cls-1" cx="474" cy="94" r="4.281"/>
+  <circle id="Elipse_2_copia_2" data-name="Elipse 2 copia 2" class="cls-1" cx="78" cy="488" r="4.281"/>
+  <circle id="Elipse_2_copia_2-2" data-name="Elipse 2 copia 2" class="cls-1" cx="474" cy="488" r="4.281"/>
+  <path id="Rectángulo_3_copia" data-name="Rectángulo 3 copia" class="cls-2" d="M10.655,277L275.739,11.754h0L541.9,278.074h0L276.812,543.32h0L10.655,277h0Z"/>
+  <path id="Rectángulo_3" data-name="Rectángulo 3" class="cls-3" d="M61.836,76.55H492.789V507.856H61.836V76.55h0Z"/>
+</svg>

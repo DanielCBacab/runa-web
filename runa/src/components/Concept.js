@@ -1,9 +1,15 @@
 import React from "react";
-import { Row, Col, Button, Image } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
+import nosotrosCircle from "../img/nosotroscircle.png";
+import nosotros from "../img/nosotros.png";
 
 export default function Concept() {
   return (
-    <Row className="justify-content-center vh-100 align-items-center aboutus position-relative g-0">
+    <Row
+      className="justify-content-center vh-100 align-items-center aboutus position-relative g-0"
+      id="nosotros"
+    >
+      <img src={nosotros} className="nosotros" />
       <h2 className="runa-title-left">Nosotros</h2>
       <Col md={5}>
         <h3 className="mb-3 primary-txt">
@@ -22,9 +28,16 @@ export default function Concept() {
           retorno de inversión.
         </p>
       </Col>
-      <Col md={5} className="text-center">
-        <Image src="" />
-        <Button className="btn btn-warning">Ver masterplan</Button>
+      <Col
+        md={5}
+        className="text-center justify-content-center text-center  nosotros-circle"
+      >
+        <Col md={12}>
+          <img src={nosotrosCircle} />
+        </Col>
+        <Col md={12}>
+          <Button className="btn btn-warning">Ver masterplan</Button>
+        </Col>
       </Col>
     </Row>
   );

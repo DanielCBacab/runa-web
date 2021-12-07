@@ -268,6 +268,27 @@ h6 {
     right: 0px;
 }
 
+.wood3{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 550px;
+    height: auto;
+    bottom: 0px;
+    left: -150px;
+}
+
+.wood4{
+    position: absolute;
+    z-index: 20;
+    overflow:hidden;
+    width: 450px;
+    height: auto;
+    top: 0px;
+    right: 0px;
+}
+
+
 .leaf1{
     position: absolute;
     z-index: 0;
@@ -286,4 +307,59 @@ h6 {
     height: auto;
     bottom: 0;
     left: -10px;
+}
+
+#financiamiento{
+    background-image: url("../img/financiamiento.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .circle{
+    background-image: url("../img/financial-circle.svg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.masterplan{
+    background-image: url("../img/mp-marco.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+.woodBrush{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 550px;
+    height: auto;
+    bottom: 0;
+    left: -10px;
+}
+
+.map{
+    z-index: 99 !important;
+}
+
+.nosotros{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 550px;
+    height: auto;
+    bottom: 50;
+    right: 0px;
+}
+
+.nosotros-circle{
+    z-index: 99;
 }
