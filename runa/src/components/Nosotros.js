@@ -1,17 +1,17 @@
 import React from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import nosotrosCircle from "../img/nosotroscircle.png";
 import nosotros from "../img/nosotros.png";
 
-export default function Concept() {
+export default function Nosotros() {
   return (
     <Row
-      className="justify-content-center vh-100 align-items-center aboutus position-relative g-0"
+      className="justify-content-center py-5 align-items-center aboutus position-relative g-0 "
       id="nosotros"
     >
-      <img src={nosotros} className="nosotros" />
+      <img src={nosotros} className="nosotros img-fluid" />
       <h2 className="runa-title-left">Nosotros</h2>
-      <Col md={5}>
+      <Col xs={10} md={5} className="my-md-5 my-4 py-md-5 py-4">
         <h3 className="mb-3 primary-txt">
           Un patrimonio con la mejor plusvalía en México.
         </h3>
@@ -29,14 +29,17 @@ export default function Concept() {
         </p>
       </Col>
       <Col
+        xs={10}
         md={5}
         className="text-center justify-content-center text-center  nosotros-circle"
       >
-        <Col md={12}>
-          <img src={nosotrosCircle} />
+        <Col xs={12}>
+          <img src={nosotrosCircle} className="img-fluid" />
         </Col>
-        <Col md={12}>
-          <Button className="btn btn-warning">Ver masterplan</Button>
+        <Col xs={12}>
+          <a className="btn btn-warning" href="/#masterplan">
+            Ver masterplan
+          </a>
         </Col>
       </Col>
     </Row>

@@ -8,7 +8,7 @@ import vendido from "../img/mp-diamante.svg";
 export default function Masterplan() {
   return (
     <Row
-      className="justify-content-center align-items-center secondary-bg g-0 position-relative p-5 masterplan"
+      className="justify-content-center align-items-center  g-0 position-relative p-5 masterplan"
       id="masterplan"
     >
       <h2 className="runa-title-right">Planes</h2>
@@ -45,7 +45,10 @@ export default function Masterplan() {
         </Ratio>
       </Col>
       <Col md={10} className="justify-content-end d-flex">
-        <a className="align-self-end btn btn-link text-decoration-none text-light">
+        <a
+          className="align-self-end btn btn-link text-decoration-none text-light"
+          href="#"
+        >
           <img src={start} width="25px" /> Volver al inicio
         </a>
       </Col>

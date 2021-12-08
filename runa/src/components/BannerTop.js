@@ -22,8 +22,8 @@ const icons = [
 
 export default function BannerTop() {
   return (
-    <Row className="justify-content-center align-items-center vh-100 banner-top g-0">
-      <Col md={1} className="align-self-end pb-5 mb-5">
+    <Row className="justify-content-center align-items-center banner-top g-0 py-5">
+      <Col md={1} className="align-self-end pb-5 mb-5 d-none d-md-block">
         {icons.map((icons) => (
           <IconContext.Provider
             value={{
@@ -37,10 +37,10 @@ export default function BannerTop() {
           </IconContext.Provider>
         ))}
       </Col>
-      <Col md={6} className="text-center">
+      <Col md={6} className="text-center my-5 py-5">
         <img src={logo} className="img-fluid" width="50%" height="50%" />
       </Col>
-      <Col md={4}>
+      <Col xs={12} md={4}>
         <FormLeads />
       </Col>
       <Col md={1}></Col>

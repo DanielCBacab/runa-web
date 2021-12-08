@@ -105,8 +105,6 @@ h2 {
     font-weight: 300 !important;
     font-size: 4.25rem;
     letter-spacing: -0.5px;
-
-
 }
 
 h3 {
@@ -149,8 +147,7 @@ h6 {
 
 .body-uno, p{
     font-family: var(--secondary-font)  !important;
-    font-weight: 500;
-    /*font-size: 1.125rem;*/
+    font-weight: normal;
     letter-spacing: 0.5px;
 
 }
@@ -186,7 +183,6 @@ h6 {
     position: absolute;
     top: -80px;
     z-index: 20;
-
 }
 
 .runa-title-right{
@@ -201,16 +197,12 @@ h6 {
 
 /*  RUNA FOTOS  */
 
-/*  CONEXIÓN RUNA FOTOS */
-
-
-
 /* Formulario runa  */
 .runa-form{
-    border-color: #f2ecec;
+    border-color: transparent;
     border-width: 1px;
     border-style: solid;
-    padding: 35px 50px;
+    padding: 35px 40px;
 }
 
 .runa-form textarea, .runa-form input{
@@ -229,6 +221,7 @@ h6 {
     background-image: url('../img/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .aboutus{
@@ -349,7 +342,7 @@ h6 {
 .map{
     z-index: 99 !important;
 }
-
+.map iframe{ height:800px}
 .nosotros{
     position: absolute;
     z-index: 0;
@@ -358,8 +351,129 @@ h6 {
     height: auto;
     bottom: 50;
     right: 0px;
+
 }
 
 .nosotros-circle{
     z-index: 99;
+    overflow: hidden;
 }
+
+.degradado{
+    background: rgb(0,31,68);
+background: linear-gradient(180deg, rgba(0,31,68,1) 47%, rgba(0,0,0,1) 100%);
+}
+
+.runa-privacy{
+    background-image: url("../img/runa-privacy.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Custom Scroll Navigator Bar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #170f4f 14%,#1d004c 64%);
+    border-radius: 10px;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #004C3F 14%,#408686 64%);
+   }
+   ::-webkit-scrollbar-track{
+    background: var(--grey-light);
+    border-radius: 0px;
+    box-shadow: inset 7px 10px 12px var(--secondary-color);
+   }
+
+
+
+  /* SELECCION DE TEXTO */
+  ::selection {
+    background: var(--primary-color);
+    color: white;
+   
+}
+
+/* Firefox */
+::-moz-selection {
+    background: var(--primary-color);
+    color: white;  
+}
+/* SELECCION DE TEXTO */
+
+
+    /*RESPONSIVE*/
+    
+    @media all and (min-width:1024px) {}
+    
+    @media all and (min-width:768px) and (max-width:1023px) {}
+    
+    @media all and (min-width:426px) and (max-width:767px) {}
+    
+    @media all and (max-width: 425px) {
+        h2{
+            font-size: 2.5rem !important;
+        }
+        h3{
+            font-size: 2rem !important;
+        }
+
+        .banner-top{
+            height: 100% !important;
+        }
+
+        .nosotros{
+            width: 100%;
+            bottom:0px;
+        }
+
+         /*  RUNA FOTOS  */
+        .runa-title-left{
+            color: #ffffff36;
+            font-size: 4rem;
+            position: absolute;
+            top: -30px;
+            z-index: 20;
+        }
+
+        .runa-title-right{
+            color: #ffffff36;
+            font-size: 4rem;
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            text-align: right;
+            z-index: 20;
+        }
+        
+        .wood1{
+            z-index: 20; 
+            width: 120px !important;
+        }
+        .wood2{
+            width: 250px !important;
+            bottom: 50px;
+        }
+
+        .wood3{
+            bottom:0px;
+            z-index: 20; 
+            width: 120px !important;
+        }
+        .wood4{
+            width: 200px !important;
+            top: 130px;
+        }
+        .woodBrush{
+            top:250px;
+            width: 250px;
+        }
+
+        .map iframe{ height:400px}
+  
+    }
+    /* RESPONSIVE*/

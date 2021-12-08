@@ -18,8 +18,8 @@ export default function NavRuna() {
         <Navbar.Brand href="/" className="text-light me-auto">
           <img
             src={logo}
-            width="38"
-            height="38"
+            width="46"
+            height="46"
             className="d-inline-block align-top"
             alt="Runa Residencial"
           />

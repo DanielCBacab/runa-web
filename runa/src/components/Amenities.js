@@ -9,7 +9,7 @@ import leaf2 from "../img/leaf2.png";
 export default function Amenities() {
   return (
     <Row
-      className="justify-content-center align-items-center secondary-bg text-light position-relative py-5 g-0"
+      className="justify-content-center align-items-center text-light position-relative py-5 g-0"
       id="amenidades"
     >
       <img src={wood} className="wood1" />
@@ -17,10 +17,10 @@ export default function Amenities() {
       <img src={leaf} className="leaf1" />
       <img src={leaf2} className="leaf2" />
       <h2 className="runa-title-right">Amenidades</h2>
-      <Col md={8} className="amenities my-5">
+      <Col xs={11} md={8} className="amenities my-5">
         <Row>
           <Col md={12} className="mb-4 text-center">
-            <img src={owl} className="my-5" />
+            <img src={owl} className="my-5 img-fluid" />
           </Col>
           <Col md={12} className="mb-4">
             <p>
@@ -51,12 +51,12 @@ export default function Amenities() {
             <Row className="justify-content-between">
               <Col md={5}>
                 <p>
-                  Cerca de Gaia Hábitat se encuentra el paso de la ruta del Tren
-                  Maya, un proyecto de más de 1,500 kilómetros que conectará los
-                  estados de Yucatán, Campeche, Chiapas, Tabasco y Quintana Roo,
-                  desde comunidades rurales hasta centros turístico, lo que
-                  incrementará el turismo en la zona y que sin duda le dará alta
-                  plusvalía a tus terrenos.
+                  Cerca de Runa Residencial se encuentra el paso de la ruta del
+                  Tren Maya, un proyecto de más de 1,500 kilómetros que
+                  conectará los estados de Yucatán, Campeche, Chiapas, Tabasco y
+                  Quintana Roo, desde comunidades rurales hasta centros
+                  turístico, lo que incrementará el turismo en la zona y que sin
+                  duda le dará alta plusvalía a tus terrenos.
                 </p>
               </Col>
               <Col md={5}>

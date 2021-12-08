@@ -4,25 +4,23 @@ import Container from "react-bootstrap/Container";
 
 import BannerTop from "../components/BannerTop";
 import NavRuna from "../components/NavRuna";
-import Concept from "../components/Concept";
+import Nosotros from "../components/Nosotros";
 import Amenities from "../components/Amenities";
-import Projects from "../components/Projects";
+import Conexion from "../components/Conexion";
 import FinantialPlans from "../components/FinantialPlans";
 import Masterplan from "../components/Masterplan";
 import Footer from "../components/Footer";
 
 export default function App() {
   return (
-    <Container fluid className="bg-dark g-0">
+    <Container fluid className="degradado g-0">
       <NavRuna />
       <BannerTop />
-      <Concept />
+      <Nosotros />
       <Amenities />
-      <Projects />
+      <Conexion />
       <FinantialPlans />
       <Masterplan />
-      {/*<Gallery />
-        >*/}
       <Footer />
     </Container>
   );
