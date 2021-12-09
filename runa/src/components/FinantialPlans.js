@@ -6,12 +6,12 @@ import wood2 from "../img/financiamiento-der.png";
 export default function Projects() {
   return (
     <Row
-      className="justify-content-center align-items-center py-5 g-0  position-relative"
+      className="justify-content-center align-items-center my-5 py-5 g-0  position-relative"
       id="financiamiento"
     >
-      <img src={wood1} className="wood3" />
-      <img src={wood2} className="wood4" />
-      <Col xs={12} className="my-1 py-1 my-md-5 py-md-5">
+      <img src={wood1} className="wood3" alt="" />
+      <img src={wood2} className="wood4" alt="" />
+      <Col xs={12} className="my-1 py-1 mt-md-5 pt-md-5">
         <h3 className="primary-txt text-center">Planes de financiamiento</h3>
       </Col>
       <Col xs={11} md={4} className="my-5 text-light text-center circle">
@@ -30,7 +30,7 @@ export default function Projects() {
           <h6>de Enganche</h6>
         </div>
       </Col>
-      <Col md={12} className="text-light text-center">
+      <Col md={12} className="my-5 text-light text-center">
         <p className="m-0">
           <strong className="primary-txt">De contado: </strong>Verifica cuales
           son los beneficios extras al pagar en una sola exhibición.

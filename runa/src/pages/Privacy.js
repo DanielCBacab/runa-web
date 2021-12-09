@@ -5,7 +5,6 @@ import { Row, Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 const razonSocial = "Yucatan Projects S.A. de C.V.";
-const correo = "teayudo@runaresidencial.com";
 
 export default function Privacy() {
   return (

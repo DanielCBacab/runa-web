@@ -245,19 +245,19 @@ h6 {
     position: absolute;
     z-index: 0;
     overflow: hidden;
-    width: 350px;
+    width: 270px;
     height: auto;
     top: 0;
-    left: -10px;
+    left: 0px;
 }
 
 .wood2{
     position: absolute;
     z-index: 20;
     overflow: hidden;
-    width: 650px;
+    width: 550px;
     height: auto;
-    bottom: 0px;
+    bottom: 50px;
     right: 0px;
 }
 
@@ -286,7 +286,7 @@ h6 {
     position: absolute;
     z-index: 0;
     overflow: hidden;
-    width: 500px;
+    width: 320px;
     height: auto;
     top: 0;
     right: 0px;
@@ -296,7 +296,7 @@ h6 {
     position: absolute;
     z-index: 0;
     overflow: hidden;
-    width: 550px;
+    width: 350px;
     height: auto;
     bottom: 0;
     left: -10px;
@@ -307,6 +307,7 @@ h6 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
  .circle{
@@ -347,11 +348,15 @@ h6 {
     position: absolute;
     z-index: 0;
     overflow: hidden;
-    width: 550px;
+    width: 450px;
     height: auto;
     bottom: 50;
     right: 0px;
 
+}
+
+#nosotros{
+    height: 100vh;
 }
 
 .nosotros-circle{
@@ -431,6 +436,10 @@ background: linear-gradient(180deg, rgba(0,31,68,1) 47%, rgba(0,0,0,1) 100%);
             bottom:0px;
         }
 
+        #nosotros{
+            height: auto;
+        }
+        
          /*  RUNA FOTOS  */
         .runa-title-left{
             color: #ffffff36;

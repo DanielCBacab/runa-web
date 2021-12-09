@@ -38,7 +38,7 @@ export default function BannerTop() {
         ))}
       </Col>
       <Col md={6} className="text-center my-5 py-5">
-        <img src={logo} className="img-fluid" width="50%" height="50%" />
+        <img src={logo} className="img-fluid" width="40%" height="40%" alt="" />
       </Col>
       <Col xs={12} md={4}>
         <FormLeads />

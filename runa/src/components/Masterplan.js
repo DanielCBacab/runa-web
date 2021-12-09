@@ -8,7 +8,7 @@ import vendido from "../img/mp-diamante.svg";
 export default function Masterplan() {
   return (
     <Row
-      className="justify-content-center align-items-center  g-0 position-relative p-5 masterplan"
+      className="justify-content-center align-items-center  g-0 position-relative p-5 my-5 masterplan"
       id="masterplan"
     >
       <h2 className="runa-title-right">Planes</h2>
@@ -21,26 +21,27 @@ export default function Masterplan() {
         <Row className="g-0">
           <Col>
             <p>
-              <img src={disponible} width="15px" /> Disponible
+              <img src={disponible} width="15px" alt="" /> Disponible
             </p>
           </Col>
           <Col>
             <p>
-              <img src={nodisponible} width="15px" /> Apartado
+              <img src={nodisponible} width="15px" alt="" /> Apartado
             </p>
           </Col>
           <Col>
             <p>
-              <img src={vendido} width="15px" /> Vendido
+              <img src={vendido} width="15px" alt="" /> Vendido
             </p>
           </Col>
         </Row>
       </Col>
       <Col md={10} className="p-5 ">
-        <Ratio aspectRatio="21x9">
+        <Ratio aspectRatio="16x9">
           <iframe
-            src="https://admin.gaiahabitat.com/planmaestroactualizado/1"
+            src="https://admin.runaresidencial.com/planmaestroactualizado/1"
             scrolling="no"
+            title="masterplan Runa Residencial"
           ></iframe>
         </Ratio>
       </Col>
@@ -49,7 +50,7 @@ export default function Masterplan() {
           className="align-self-end btn btn-link text-decoration-none text-light"
           href="#"
         >
-          <img src={start} width="25px" /> Volver al inicio
+          <img src={start} width="25px" alt="" /> Volver al inicio
         </a>
       </Col>
     </Row>

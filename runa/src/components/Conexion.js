@@ -12,16 +12,16 @@ export default function Conexion() {
         <h2 className="runa-title-left">Conexión</h2>
       </Col>
       <Col xs={6} md={3} className="text-center g-0">
-        <img src={conection1} className="img-fluid w-100" />
+        <img src={conection1} className="img-fluid w-100" alt="" />
       </Col>
       <Col xs={6} md={3} className="text-center g-0">
-        <img src={conection2} className="img-fluid w-100" />
+        <img src={conection2} className="img-fluid w-100" alt="" />
       </Col>
       <Col xs={6} md={3} className="text-center g-0">
-        <img src={conection3} className="img-fluid w-100" />
+        <img src={conection3} className="img-fluid w-100" alt="" />
       </Col>
       <Col xs={6} md={3} className="text-center g-0">
-        <img src={conection4} className="img-fluid w-100" />
+        <img src={conection4} className="img-fluid w-100" alt="" />
       </Col>
     </Row>
   );

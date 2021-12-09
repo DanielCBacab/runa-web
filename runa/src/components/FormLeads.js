@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import Axios from "axios";
 
 export default function FormLeads() {
-  const url = "http://admin.runaresidencial.com/api/leadapi";
+  const url = "https://admin.runaresidencial.com/api/leadapi";
   const [data, setData] = useState({
     name: "",
     phone: "",
@@ -31,7 +31,6 @@ export default function FormLeads() {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
     setData(newData);
-    console.log(newData);
   }
   return (
     <Form
@@ -92,7 +91,13 @@ export default function FormLeads() {
       </Button>
       <br />
       <small className="text-white mt-5">
-        Al enviar el fomulario aceptas nuestras Políticas de Privacidad.
+        Al enviar el fomulario aceptas nuestras{" "}
+        <a
+          className="primary-txt text-decoration-none"
+          href="/politicas-privacidad"
+        >
+          Políticas de Privacidad.
+        </a>
       </small>
     </Form>
   );
