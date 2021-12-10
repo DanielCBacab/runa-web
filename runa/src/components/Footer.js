@@ -37,7 +37,7 @@ export default function Footer() {
       className="justify-content-center align-items-center py-5 g-0  position-relative"
       id="contacto"
     >
-      <img src={woodBrush} className="woodBrush" />
+      <img src={woodBrush} className="woodBrush" alt="" />
       <Col md={1} className="d-none d-md-block"></Col>
       <Col xs={10} md={4} className="map">
         <h4 className="primary-txt text-center mb-5 d-block d-md-none">
@@ -48,15 +48,16 @@ export default function Footer() {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.823376506533!2d-87.03149868494712!3d20.99971599414475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5087d045c77dac17!2zMjDCsDU5JzU5LjAiTiA4N8KwMDEnNDUuNSJX!5e0!3m2!1ses-419!2smx!4v1638913447117!5m2!1ses-419!2smx"
           className="w-100 text-center"
-          allowfullscreen="yes"
+          allowFullScreen="yes"
           loading="lazy"
+          title="Maps"
         ></iframe>
         <Col md={12} className="justify-content-end d-flex">
           <a
             className="align-self-end btn btn-link text-decoration-none text-light"
             href="#"
           >
-            <img src={start} width="25px" /> Volver al inicio
+            <img src={start} width="25px" alt="" /> Volver al inicio
           </a>
         </Col>
       </Col>
@@ -70,10 +71,11 @@ export default function Footer() {
         <div className="primary-bg w-100 p-4 my-5">
           <h5 className="mb-3">Runa Residencial</h5>
           <p>
-            Es un desarrollo diseñado de manera sustentable, respetamos la
-            conservación de la fauna y flora nativa, utilizamos los recursos
-            naturales de la zona de manera consciente para vivir cómodamente y
-            en armonía con la naturaleza.
+            Un entorno que va más allá de un espacio de relajación y calma lejos
+            de la ciudad, es un santuario de conexión contigo mismo y los tuyos
+            en donde la vida cotidiana y tú inversión a futuro serán una
+            experiencia sublime lleno de confort, afabilidad y riqueza de alta
+            vibración.
           </p>
         </div>
         <div className="text-light mb-5">
@@ -129,7 +131,7 @@ export default function Footer() {
                 size: "2.688rem",
               }}
             >
-              <a href={icons.link} target="_blank">
+              <a href={icons.link} target="_blank" rel="noreferrer">
                 {icons.iconName}
               </a>
             </IconContext.Provider>

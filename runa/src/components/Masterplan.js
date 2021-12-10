@@ -36,7 +36,7 @@ export default function Masterplan() {
           </Col>
         </Row>
       </Col>
-      <Col md={10} className="p-5 ">
+      <Col md={10} className="p-0 p-md-5 ">
         <Ratio aspectRatio="16x9">
           <iframe
             src="https://admin.runaresidencial.com/planmaestroactualizado/1"

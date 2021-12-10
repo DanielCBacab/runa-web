@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Modal } from "react-bootstrap";
 import Axios from "axios";
 
 export default function FormLeads() {
@@ -24,6 +24,7 @@ export default function FormLeads() {
       productName: "Runa Residencial - Web",
     }).then((res) => {
       console.log(res.data);
+      alert(res.data);
     });
   }
 
@@ -53,8 +54,11 @@ export default function FormLeads() {
           className="mb-3"
           type="tel"
           id="phone"
+          maxlength="10"
+          title="Número de teléfono a 10 dígitos"
           onChange={(e) => handle(e)}
           placeholder="Teléfono"
+          required
         ></Form.Control>
       </Form.Group>
       <Form.Group>
@@ -64,6 +68,7 @@ export default function FormLeads() {
           id="email"
           onChange={(e) => handle(e)}
           placeholder="Correo electrónico"
+          required
         ></Form.Control>
       </Form.Group>
       <Form.Group>
@@ -73,6 +78,7 @@ export default function FormLeads() {
           id="city"
           onChange={(e) => handle(e)}
           placeholder="Ciudad"
+          required
         ></Form.Control>
       </Form.Group>
       <Form.Group>
@@ -99,6 +105,21 @@ export default function FormLeads() {
           Políticas de Privacidad.
         </a>
       </small>
+      <Modal.Dialog>
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h2 className="text-center primary-txt">¡Felicidades!</h2>
+          <p>
+            Te has registrado con éxito, en breve uno de nuestros asesores te
+            guiarán en el proceso para adquirir tu lote.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary">Cerrar</Button>
+        </Modal.Footer>
+      </Modal.Dialog>
     </Form>
   );
 }

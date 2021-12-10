@@ -31,7 +31,7 @@ export default function BannerTop() {
               size: "2.688rem",
             }}
           >
-            <a href={icons.link} target="_blank">
+            <a href={icons.link} target="_blank" rel="noreferrer">
               {icons.iconName}
             </a>
           </IconContext.Provider>

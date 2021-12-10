@@ -16,52 +16,63 @@ export default function Amenities() {
       <img src={wood2} className="wood2" alt="" />
       <img src={leaf} className="leaf1" alt="" />
       <img src={leaf2} className="leaf2" alt="" />
-      <h2 className="runa-title-right">Amenidades</h2>
+      <h2 className="runa-title-right">Trasciende</h2>
       <Col xs={11} md={8} className="amenities my-5">
         <Row>
           <Col md={12} className="mb-4 text-center">
             <img src={owl} className="my-5 img-fluid" alt="" />
           </Col>
           <Col md={12} className="mb-4">
+            <h3 className="primary-txt text-center mb-4">
+              Inicia tu trascendencia
+            </h3>
             <p>
-              El respeto hacia la naturaleza es la característica principal de
-              nuestros terrenos ecológicos residenciales y comerciales que van
-              de los 800 m2, los cuales puedes adquirir desde cualquier parte de
-              México, con el mejor financiamiento y de forma muy fácil. Dale paz
-              y tranquilidad a los tuyos en este rincón natural.
+              <strong className="primary-txt">Runa Residencial</strong> está
+              establecido por{" "}
+              <strong className="primary-txt">
+                5 secciones dentro de 11 conjuntos
+              </strong>
+              , con amplios lotes que ofrecen la oportunidad de crear un espacio
+              único donde la comodidad y tranquilidad es la base de un buen
+              hogar.
             </p>
           </Col>
           <Col md={12}>
             <Row className="justify-content-between">
               <Col md={5}>
                 <p>
-                  Invierte y construye tu hogar en terrenos que van desde los
-                  800m2.
+                  El nombre de cada sección representa{" "}
+                  <strong className="primary-txt">
+                    Los reinos de la naturaleza
+                  </strong>
+                  . Dentro del primer conjunto del reino mineral nos encontramos
+                  a la sección Thurisaz con 91 lotes, siendo acompañado por
+                  Fehu, sección con 156 lotes.
                 </p>
               </Col>
               <Col md={5}>
                 <p>
-                  <strong className="primary-txt">Runa Residencial</strong> es
-                  un proyecto amigable con el medio ambiente, para la
-                  construcción de las diversas áreas se utilizarán materiales de
-                  la región; se cuidará la flora y fauna nativa.
+                  El reino representado en el siguiente es el Reino Humano, con
+                  Kanaz de 60 lotes y Mannaz con 137 lotes.
                 </p>
               </Col>
             </Row>
             <Row className="justify-content-between">
               <Col md={5}>
                 <p>
-                  Cerca de{" "}
-                  <strong className="primary-txt">Runa Residencial</strong> un
-                  proyecto de más se encuentra en una zona 100% turística lo que
-                  sin duda le dará alta plusvalía a tus terrenos.
+                  El siguiente conjunto representa al Reino Vegetal, con Halagaz
+                  de 87 lotes y Nauthiz con 78 lotes.
+                </p>
+                <p>
+                  Se continúa con el conjunto del Reino Animal, Algiz con 117
+                  lotes y Laguz con 131 lotes.
                 </p>
               </Col>
               <Col md={5}>
                 <p>
-                  Nuestros lotes ecológicos se localizan en Quintana Roo. A
-                  minutos de destinos turísticos de talla mundial como lo son
-                  Cancún, Puerto Morelos, Isla Mujeres y Playa del Carmen.
+                  Al final del camino hacia la trascendencia nos encontramos con
+                  el Reino Divino, con las secciones de Perth con 89 lotes,
+                  Raidho que cuenta con 110 lotes y Dagaz con 78 lotes.
                 </p>
               </Col>
             </Row>

@@ -17,18 +17,22 @@ export default function Nosotros() {
         </h3>
         <p className="subtitle text-white">Nuestra Propuesta</p>
         <p className="text-white">
-          Invierte en un patrimonio para tu familia en México, construye un
-          hogar de forma ecológica y vive cómodamente en el
-          <strong className="primary-txt"> Caribe Mexicano </strong>, a pocos
-          minutos de Cancún, un paraíso turístico considerado el destino número
-          uno para los visitantes de todo el mundo.
+          <strong className="primary-txt"> Runa Residencial</strong>, es un
+          desarrollo sustentable en donde no solo la plusvalía es altamente
+          rentable sino toda la magia y mística que constituye este complejo
+          dentro de la tranquilidad de la selva maya y la pasividad de la
+          naturaleza ancestral
           <br /> <br />
-          Gracias a la plusvalía inmediata que ofrece el estado de
-          <strong className="primary-txt"> Quintana Roo </strong>
-          por ser una zona 100% turística, al adquirir terrenos ecológicos
-          residenciales o comerciales en{" "}
-          <strong className="primary-txt">Runa Residencial</strong>, obtendrás
-          el mejor retorno de inversión.
+          Un espacio en donde{" "}
+          <strong className="primary-txt"> la magia y el lujo </strong>convergen
+          para crear un concepto único en esta pequeña ciudad de gran impacto
+          económico.
+        </p>
+        <p className="text-white">
+          Un entorno que va más allá de un espacio de relajación y calma lejos
+          de la ciudad, es un santuario de conexión contigo mismo y los tuyos en
+          donde la vida cotidiana y tú inversión a futuro serán una experiencia
+          sublime lleno de confort, afabilidad y riqueza de alta vibración.
         </p>
       </Col>
       <Col

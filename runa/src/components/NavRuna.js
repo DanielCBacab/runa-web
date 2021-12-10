@@ -15,7 +15,7 @@ export default function NavRuna() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand href="/" className="text-light me-auto">
+        <Navbar.Brand href="/" className="mx-4 mx-md-3 text-light me-auto ">
           <img
             src={logo}
             width="46"
@@ -32,8 +32,9 @@ export default function NavRuna() {
           <Nav>
             {nav.map((nav) => (
               <Nav.Link
-                className="text-light mx-md-3 primary-txt"
+                className="text-light mx-4 mx-md-3 my-1 m-md-0 primary-txt"
                 href={nav.link}
+                key={nav.content}
               >
                 {nav.content}
               </Nav.Link>

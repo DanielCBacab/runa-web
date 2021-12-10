@@ -12,7 +12,7 @@ export default function Privacy() {
       <NavRuna />
       {/* TÍTULO DE POLITICAS DE PRIVACIDAD */}
       <Row className="justify-content-center g-0 my-5 py-5 runa-privacy">
-        <Col md={10} className="text-center my-5 py-5">
+        <Col xs={10} className="text-center my-5 py-5">
           <h2 className="primary-txt">Aviso de Privacidad</h2>
           <p className="text-light">
             El aviso de privacidad tendrá por objeto informar al titular sobre
@@ -26,7 +26,7 @@ export default function Privacy() {
 
       {/* SEGUNDA SECCIÓN POLITICAS DE PRIVACIDAD */}
       <Row className="justify-content-center g-0 pt-5">
-        <Col md={10} className="my-5">
+        <Col xs={10} className="my-5">
           <h3 className="primary-txt text-center mb-4">
             ¿Para qué usaremos sus datos personales?
           </h3>
@@ -46,7 +46,7 @@ export default function Privacy() {
             el servicio que solicita
           </p>
         </Col>
-        <Col md={5} className="mt-1 mb-5">
+        <Col xs={11} md={5} className="mt-1 mb-5">
           <h4 className="primary-txt text-center mb-4">Clientes</h4>
           <ul className="text-light">
             <li>Integrar el expediente de cliente.</li>
@@ -79,7 +79,7 @@ export default function Privacy() {
             </li>
           </ul>
         </Col>
-        <Col md={5} className="mt-1 mb-5">
+        <Col xs={11} md={5} className="mt-1 mb-5">
           <h4 className="primary-txt text-center mb-4">Oferentes</h4>
           <ul className="text-light">
             <li>Llevar a cabo el estudio de la oferta unilateral de compra.</li>
@@ -104,7 +104,7 @@ export default function Privacy() {
       </Row>
       {/* SEGUNDA SECCIÓN POLITICAS DE PRIVACIDAD */}
       <Row className="justify-content-center g-0 my-5 py-5">
-        <Col md="10">
+        <Col xs={10}>
           <h4 className="text-center primary-txt mb-4">
             Uso de cookies, web beacons y javascript
           </h4>
@@ -143,7 +143,7 @@ export default function Privacy() {
         </Col>
       </Row>
       <Row className="justify-content-center g-0 my-5 py-5">
-        <Col md="10">
+        <Col xs={10}>
           <h4 className="text-center primary-txt mb-4">
             ¿Cuál es el procedimiento para ejercer mis Derechos ARCO?
           </h4>

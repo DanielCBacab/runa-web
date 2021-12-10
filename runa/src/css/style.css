@@ -420,6 +420,11 @@ background: linear-gradient(180deg, rgba(0,31,68,1) 47%, rgba(0,0,0,1) 100%);
     @media all and (min-width:426px) and (max-width:767px) {}
     
     @media all and (max-width: 425px) {
+        .navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler, .navbar-toggler:focus{
+            border-color:transparent !important;
+        }
+
+
         h2{
             font-size: 2.5rem !important;
         }
