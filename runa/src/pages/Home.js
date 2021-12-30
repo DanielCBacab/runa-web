@@ -9,6 +9,7 @@ import Amenities from "../components/Amenities";
 import Conexion from "../components/Conexion";
 import FinantialPlans from "../components/FinantialPlans";
 import Masterplan from "../components/Masterplan";
+import PlanMaestro from "../components/PlanMaestro";
 import Footer from "../components/Footer";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Conexion />
       <FinantialPlans />
       <Masterplan />
+      <PlanMaestro />
       <Footer />
     </Container>
   );

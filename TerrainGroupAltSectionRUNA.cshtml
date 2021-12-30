@@ -1,0 +1,647 @@
+﻿@{
+    Layout = null;
+}
+@using ReservationService.Model;
+@using ReservationService;
+
+@{
+    MasterPlanGroup masterPlanGroup = (MasterPlanGroup)ViewBag.masterPlanGroup;
+    List<Terrain> terrainList = (List<Terrain>)ViewBag.terrainList;
+    int sectionId = (int)ViewBag.sectionId;
+
+    String lang = Request.UserLanguages[0];
+    Decimal dolar = @SiteManager.GetSite().exchangeRateUSD;
+
+}
+
+
+
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Masterplan Runa Residencial</title>
+    <style>
+        .disponible {
+            fill: #ffc740a8;
+            stroke: transparent;
+        }
+
+            .disponible:hover {
+                fill: #ffc740b3;
+            }
+
+        .no-disponible {
+            fill: #4a0e81;
+            cursor: not-allowed;
+            stroke: #4a0e81;
+        }
+
+        .reservado {
+            fill: #0e19a3;
+            cursor: not-allowed;
+            stroke: #00000b;
+        }
+
+        .mp-header {
+            background-color: white;
+            height: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cls-2, .cls-1 {
+            fill: white;
+            pointer-events: none;
+        }
+
+        .modal-content {
+            /*background-image: url('https://gaiahabitat.com/img/leaf-bg.png');
+            background-size: 17%;
+            background-repeat: no-repeat;
+            background-position: top right;*/
+            border-radius: 24px;
+            border-color:  #b4903a;
+            border-width: 6px;
+        }
+
+        .modal-header {
+            border-bottom: 0px solid white;
+        }
+
+        .modal-body strong {
+            color:  #b4903a;
+        }
+
+        #Capa_1 {
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row masterplan">
+            <div class="col-12 mp-body p-0" style="background: #141325;">
+                <svg id="Capa_1" data-name="Capa 1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 1143 643">
+                    <image width="1143" height="643" xlink:href="../Content/masterplanbg.jpg" />
+
+                    @foreach (var item in terrainList)
+                    {
+                        if (item.isSold)
+                        {
+                            <polygon id="lote-@(item.terrainId)" 
+                            dataname="lote-@(item.terrainId)" class="no-disponible" points="@item.svgPoint" />
+                        }
+                        else
+                        {
+                            if (item.isPending)
+                            {
+                                <polygon id="lote-@(item.terrainId)" 
+                                dataname="lote-@(item.terrainId)" class="reservado" points="@item.svgPoint" />
+                            }
+                            else
+                            {
+                                <polygon id="lote-@(item.terrainId)"
+                                dataname="lote-@(item.terrainId)" class="disponible" points="@item.svgPoint" href="#" data-toggle="modal" data-target="#Modal-id-@item.terrainId" />
+                            }
+                        }
+                    }
+
+
+<g>
+    <text class="cls-1" transform="translate(615.2 452.8)">1</text>
+    <text class="cls-2" transform="translate(615.2 452.8)">1</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(582.7 474.3)">2</text>
+    <text class="cls-2" transform="translate(582.7 474.3)">2</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(558.6 489.1)">3</text>
+    <text class="cls-2" transform="translate(558.6 489.1)">3</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(533.6 499.5)">4</text>
+    <text class="cls-2" transform="translate(533.6 499.5)">4</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(510.9 508.3)">5</text>
+    <text class="cls-2" transform="translate(510.9 508.3)">5</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(485.8 519.2)">6</text>
+    <text class="cls-2" transform="translate(485.8 519.2)">6</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(463.3 529)">7</text>
+    <text class="cls-2" transform="translate(463.3 529)">7</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(436.7 540.6)">8</text>
+    <text class="cls-2" transform="translate(436.7 540.6)">8</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(413.3 550.4)">9</text>
+    <text class="cls-2" transform="translate(413.3 550.4)">9</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(378.5 562.5)">10</text>
+    <text class="cls-2" transform="translate(378.5 562.5)">10</text>
+  </g>
+  <g>
+    <text class="cls-2" transform="translate(349 563.5)">11</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(321.8 564.5)">12</text>
+    <text class="cls-2" transform="translate(321.8 564.5)">12</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(293.7 565.5)">13</text>
+    <text class="cls-2" transform="translate(293.7 565.5)">13</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(265.2 565.5)">14</text>
+    <text class="cls-2" transform="translate(265.2 565.5)">14</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(237.3 566.5)">15</text>
+    <text class="cls-2" transform="translate(237.3 566.5)">15</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(209.1 567.5)">16</text>
+    <text class="cls-2" transform="translate(209.1 567.5)">16</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(216 516.5)">17</text>
+    <text class="cls-2" transform="translate(216 516.5)">17</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(215 487.5)">18</text>
+    <text class="cls-2" transform="translate(215 487.5)">18</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(215 462)">19</text>
+    <text class="cls-2" transform="translate(215 462)">19</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(213 434.3)">20</text>
+    <text class="cls-2" transform="translate(213 434.3)">20</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(214 406.8)">21</text>
+    <text class="cls-2" transform="translate(214 406.8)">21</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(212 379.6)">22</text>
+    <text class="cls-2" transform="translate(212 379.6)">22</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(211 354.6)">23</text>
+    <text class="cls-2" transform="translate(211 354.6)">23</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(210 328.1)">24</text>
+    <text class="cls-2" transform="translate(210 328.1)">24</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(208 301.4)">25</text>
+    <text class="cls-2" transform="translate(208 301.4)">25</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(207 275.4)">26</text>
+    <text class="cls-2" transform="translate(207 275.4)">26</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(203 167.6)">30</text>
+    <text class="cls-2" transform="translate(203 167.6)">30</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(203 193.9)">29</text>
+    <text class="cls-2" transform="translate(203 193.9)">29</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(205 221.6)">28</text>
+    <text class="cls-2" transform="translate(205 221.6)">28</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(207 247.8)">27</text>
+    <text class="cls-2" transform="translate(207 247.8)">27</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(203 141.6)">31</text>
+    <text class="cls-2" transform="translate(203 141.6)">31</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(200 114.1)">32</text>
+    <text class="cls-2" transform="translate(200 114.1)">32</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(199 87.4)">33</text>
+    <text class="cls-2" transform="translate(199 87.4)">33</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(198 62.4)">34</text>
+    <text class="cls-2" transform="translate(198 62.4)">34</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(245.8 81.5)">35</text>
+    <text class="cls-2" transform="translate(245.8 81.5)">35</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(271.3 97.1)">36</text>
+    <text class="cls-2" transform="translate(271.3 97.1)">36</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(293.8 113.4)">37</text>
+    <text class="cls-2" transform="translate(293.8 113.4)">37</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(314.7 130.3)">38</text>
+    <text class="cls-2" transform="translate(314.7 130.3)">38</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(334.7 147.9)">39</text>
+    <text class="cls-2" transform="translate(334.7 147.9)">39</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(355.6 162.3)">40</text>
+    <text class="cls-2" transform="translate(355.6 162.3)">40</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(380.6 178)">41</text>
+    <text class="cls-2" transform="translate(380.6 178)">41</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(421 210.8)">43</text>
+    <text class="cls-2" transform="translate(421 210.8)">43</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(400.4 194.4)">42</text>
+    <text class="cls-2" transform="translate(400.4 194.4)">42</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(439 228.7)">44</text>
+    <text class="cls-2" transform="translate(439 228.7)">44</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(459.6 246.6)">45</text>
+    <text class="cls-2" transform="translate(459.6 246.6)">45</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(480.7 265.4)">46</text>
+    <text class="cls-2" transform="translate(480.7 265.4)">46</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(501.3 284.6)">47</text>
+    <text class="cls-2" transform="translate(501.3 284.6)">47</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(517.7 305.2)">48</text>
+    <text class="cls-2" transform="translate(517.7 305.2)">48</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(534.1 326.3)">49</text>
+    <text class="cls-2" transform="translate(534.1 326.3)">49</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(550.5 348.9)">50</text>
+    <text class="cls-2" transform="translate(550.5 348.9)">50</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(563 375)">51</text>
+    <text class="cls-2" transform="translate(563 375)">51</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(578.6 406.8)">52</text>
+    <text class="cls-2" transform="translate(578.6 406.8)">52</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(528.9 436.8)">53</text>
+    <text class="cls-2" transform="translate(528.9 436.8)">53</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(513.8 413.8)">54</text>
+    <text class="cls-2" transform="translate(513.8 413.8)">54</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(501.5 384.9)">55</text>
+    <text class="cls-2" transform="translate(501.5 384.9)">55</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(480.1 358.9)">56</text>
+    <text class="cls-2" transform="translate(480.1 358.9)">56</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(459.6 331.4)">57</text>
+    <text class="cls-2" transform="translate(459.6 331.4)">57</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(439.5 308.1)">58</text>
+    <text class="cls-2" transform="translate(439.5 308.1)">58</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(423.1 287.6)">59</text>
+    <text class="cls-2" transform="translate(423.1 287.6)">59</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(400.5 270.7)">60</text>
+    <text class="cls-2" transform="translate(400.5 270.7)">60</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(377.6 248.8)">61</text>
+    <text class="cls-2" transform="translate(377.6 248.8)">61</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(352.2 224.7)">62</text>
+    <text class="cls-2" transform="translate(352.2 224.7)">62</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(326.4 210.2)">63</text>
+    <text class="cls-2" transform="translate(326.4 210.2)">63</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(304.9 193.9)">64</text>
+    <text class="cls-2" transform="translate(304.9 193.9)">64</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(283.4 179.4)">65</text>
+    <text class="cls-2" transform="translate(283.4 179.4)">65</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(256.4 158.8)">66</text>
+    <text class="cls-2" transform="translate(256.4 158.8)">66</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(256.4 232.6)">67</text>
+    <text class="cls-2" transform="translate(256.4 232.6)">67</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(280.3 254.8)">68</text>
+    <text class="cls-2" transform="translate(280.3 254.8)">68</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(302.6 269.9)">69</text>
+    <text class="cls-2" transform="translate(302.6 269.9)">69</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(323 287.7)">70</text>
+    <text class="cls-2" transform="translate(323 287.7)">70</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(343.3 306.5)">71</text>
+    <text class="cls-2" transform="translate(343.3 306.5)">71</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(361.6 322.4)">72</text>
+    <text class="cls-2" transform="translate(361.6 322.4)">72</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(384.4 343)">73</text>
+    <text class="cls-2" transform="translate(384.4 343)">73</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(408.3 368.3)">74</text>
+    <text class="cls-2" transform="translate(408.3 368.3)">74</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(428.7 389.4)">75</text>
+    <text class="cls-2" transform="translate(428.7 389.4)">75</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(443.1 413.6)">76</text>
+    <text class="cls-2" transform="translate(443.1 413.6)">76</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(459.6 436.8)">77</text>
+    <text class="cls-2" transform="translate(459.6 436.8)">77</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(471 463)">78</text>
+    <text class="cls-2" transform="translate(471 463)">78</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(423.7 468)">79</text>
+    <text class="cls-2" transform="translate(423.7 468)">79</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(397.7 480.3)">80</text>
+    <text class="cls-2" transform="translate(397.7 480.3)">80</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(317.9 499)">83</text>
+    <text class="cls-2" transform="translate(317.9 499)">83</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(344.4 496.4)">82</text>
+    <text class="cls-2" transform="translate(344.4 496.4)">82</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(372.4 495.5)">81</text>
+    <text class="cls-2" transform="translate(372.4 495.5)">81</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(278.3 510.2)">84</text>
+    <text class="cls-2" transform="translate(278.3 510.2)">84</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.7 484.3)">85</text>
+    <text class="cls-2" transform="translate(274.7 484.3)">85</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.4 459.8)">86</text>
+    <text class="cls-2" transform="translate(274.4 459.8)">86</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.4 430.7)">87</text>
+    <text class="cls-2" transform="translate(274.4 430.7)">87</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.4 403.9)">88</text>
+    <text class="cls-2" transform="translate(274.4 403.9)">88</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.4 376.3)">89</text>
+    <text class="cls-2" transform="translate(274.4 376.3)">89</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.4 349.9)">90</text>
+    <text class="cls-2" transform="translate(274.4 349.9)">90</text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(274.4 318.4)">91</text>
+    <text class="cls-2" transform="translate(274.4 318.4)">91</text>
+  </g>
+                   
+                </svg>
+
+                @foreach (var item in terrainList)
+                {
+
+
+                    if (item.isSold)
+                    {
+                        <div>
+                        </div>
+                    }
+
+                    else
+                    {
+
+
+
+                        /*<div class="modal fade" id="Modal-id-@item.terrainId" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered" role="document">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h3 class="modal-title text-center" id="ModalLongTitle">Lote @item.lotNumber - Disponible</h3>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                                 </button>
+                               </div>
+
+                               @{
+                                 // Calculo de Cifras
+                                   decimal Enganche = Math.Round(((item.price * 30) / 100),2);
+                                   decimal Mensualidades = Math.Round(((item.price - Enganche) / 36),2);
+                                 // Conversión de Cifras a Strings con formato
+                                   string ResEnganche = Enganche.ToString("$ ###,###.00");
+                                   string ResMensualidades = Mensualidades.ToString("$ ###,###.00");
+                                   string PrecioTotal = item.price.ToString("$ ###,###.00");
+                                   }
+
+                               <div class="modal-body">
+                                   <h4>&Aacute;rea: @item.size &#13217;</h4>
+                                   <br/>
+                                   <h4>Precio Total: <strong id="PrecioTotal">@PrecioTotal</strong></h4>
+                                   <h4>Enganche 30%: <strong id="ResEnganche">@ResEnganche</strong></h4>
+                                   <h4>36 Mensualidades de: <strong id="ResMensualidades">@ResMensualidades</strong></h4>
+                               </div>
+
+                             </div>
+                           </div>
+                         </div>
+                         */
+
+
+                        <div class="modal fade" id="Modal-id-@item.terrainId" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:600px !important">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center p-0">
+                                        <button type="button" class="close p-4" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!-- CÁLCULO DE LOTES POR IDIOMA DEL NAVEGADOR -->
+                                    @{
+                                        decimal Enganche;
+                                        decimal Mensualidades;
+                                        decimal Mensualidades12;
+                                        decimal Mensualidades24;
+
+                                        string PrecioTotal;
+                                        string ResEnganche;
+                                        string ResMensualidades;
+                                        string ResMeses12;
+                                        string ResMeses24;
+
+
+
+
+                                            // Calculo de Cifras
+                                            Enganche = Math.Round(((item.price * 30) / 100), 2);
+                                            Mensualidades = Math.Round(((item.price - Enganche) / 36), 2);
+                                            Mensualidades12 = Math.Round(((item.price - Enganche) / 12), 2);
+                                            Mensualidades24 = Math.Round(((item.price - Enganche) / 24), 2);
+                                            // Conversión de Cifras a Strings con formato
+                                            PrecioTotal = item.price.ToString("###,###.00 MXN");
+                                            ResEnganche = Enganche.ToString("###,###.00 MXN");
+                                            ResMensualidades = Mensualidades.ToString("###,###.00 MXN");
+                                            ResMeses12 = Mensualidades12.ToString("###,###.00 MXN");
+                                            ResMeses24 = Mensualidades24.ToString("###,###.00  MXN");
+                                        
+
+                                    }
+
+                                    <div class="modal-body">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
+                                                <!--<img class="img-fluid" src="https://admin.gaiahabitat.com/Content/Documents/terrainplans/@item.lotNumber&period;jpg"/>-->
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="row ">
+                                                    <div class="col my-1">
+                                                         <img src="https://runaresidencial.com/logo.svg" class="img-fluid" width="45px">
+                                                        <h4>Lote @item.lotNumber - @item.lotType<br /><strong>Disponible</strong></h4>
+                                                        <h6>&Aacute;rea: <strong>@item.size &#13217;</strong></h6>
+
+                                                        <h6>Precio Total: <strong id="PrecioTotal">@PrecioTotal</strong></h6>
+                                                        <h6>Enganche 30%: <strong id="ResEnganche">@ResEnganche</strong></h6>
+                                                        <h6>12 Mensualidades de: <strong id="ResMensualidades">@ResMeses12</strong></h6>
+                                                        <h6>24 Mensualidades de: <strong id="ResMensualidades">@ResMeses24</strong></h6>
+                                                    </div>
+
+                                                    <div class="col-12 my-3">
+                                                        <p>Para más información de otros planes de financiamiento consultanos por:</p>
+                                                        <a href="https://api.whatsapp.com/send?phone=5219981172398&text=Hola,%20Solicito%20informes%20sobre%20el%20lote%20en%20Runa%20Residencial%20-%20(@item.lotNumber)%20(@PrecioTotal)" class="btn btn-success btn-md" role="button" aria-pressed="true" target="_blank"><i class="fab fa-whatsapp"></i> Contactar por Whatsapp</a>
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 text-center mb-4">
+                                                <div class="text-center">
+                                                    <img src="https://gaiahabitat.com/images/modallogo.jpg" class="img-fluid" width="45px">
+                                                </div>
+                                                <h4>Lote @item.lotNumber<br /><strong>Disponible</strong></h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-6 text-center my-1">
+                                                <h6>Precio Total: <br /><strong id="PrecioTotal">@PrecioTotal</strong></h6>
+                                            </div>
+                                            <div class="col-6 text-center my-1">
+                                                <h6>Enganche 30%: <br /><strong id="ResEnganche">@ResEnganche</strong></h6>
+                                            </div>
+                                            <div class="col-6 text-center my-1">
+                                                <h6>36 Mensualidades de: <br /><strong id="ResMensualidades">@ResMensualidades</strong></h6>
+                                            </div>
+                                            <div class="col-12 text-center my-3">
+                                                <a href="https://api.whatsapp.com/send?phone=5219982608223&text=Hola,%20Solicito%20informes%20sobre%20el%20lote%20-%20(@item.lotNumber)" class="btn btn-success btn-md" role="button" aria-pressed="true" target="_blank"><i class="fab fa-whatsapp"></i> Contactar por Whatsapp</a>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                }
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dc6c40badd.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -18,10 +18,10 @@ export default function Nosotros() {
         <p className="subtitle text-white">Nuestra Propuesta</p>
         <p className="text-white">
           <strong className="primary-txt"> Runa Residencial</strong>, es un
-          desarrollo sustentable en donde no solo la plusvalía es altamente
-          rentable sino toda la magia y mística que constituye este complejo
-          dentro de la tranquilidad de la selva maya y la pasividad de la
-          naturaleza ancestral
+          desarrollo en donde no solo la plusvalía es altamente rentable sino
+          toda la magia y mística que constituye este complejo dentro de la
+          tranquilidad de la selva maya y la pasividad de la naturaleza
+          ancestral
           <br /> <br />
           Un espacio en donde{" "}
           <strong className="primary-txt"> la magia y el lujo </strong>convergen

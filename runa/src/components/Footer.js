@@ -82,10 +82,10 @@ export default function Footer() {
           <p className="m-0">
             Whatsapp:
             <a
-              href="tel:9982770954"
+              href="tel:9981172398"
               className="text-light text-decoration-none"
             >
-              998 277 0954
+              998 117 2398
             </a>
           </p>
           <p className="m-0">

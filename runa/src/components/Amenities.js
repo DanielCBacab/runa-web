@@ -30,49 +30,56 @@ export default function Amenities() {
               <strong className="primary-txt">Runa Residencial</strong> está
               establecido por{" "}
               <strong className="primary-txt">
-                5 secciones dentro de 11 conjuntos
+                11 conjuntos dentro de 5 secciones
               </strong>
               , con amplios lotes que ofrecen la oportunidad de crear un espacio
               único donde la comodidad y tranquilidad es la base de un buen
               hogar.
             </p>
           </Col>
-          <Col md={12}>
+          <Col md={6}>
             <Row className="justify-content-between">
-              <Col md={5}>
+              <Col md={11}>
                 <p>
                   El nombre de cada sección representa{" "}
                   <strong className="primary-txt">
-                    Los reinos de la naturaleza
+                    Los reinos de la naturaleza.
                   </strong>
-                  . Dentro del primer conjunto del reino mineral nos encontramos
-                  a la sección Thurisaz con 91 lotes, siendo acompañado por
-                  Fehu, sección con 156 lotes.
+                  Dentro de la primer sección del reino mineral nos encontramos
+                  con la sección uno: Thurisaz con 91 lotes, siendo acompañado
+                  por Fehu, conjunto 2 con 156 lotes.
                 </p>
               </Col>
-              <Col md={5}>
+              <Col md={11}>
                 <p>
-                  El reino representado en el siguiente es el Reino Humano, con
-                  Kanaz de 60 lotes y Mannaz con 137 lotes.
+                  La siguiente sección representa al Reino Vegetal, con Halagaz
+                  de 87 lotes y Nauthiz con 78 lotes.
+                </p>
+              </Col>
+              <Col md={11}>
+                <p>
+                  Se continúa con la sección tres: del Reino Animal, Algiz con
+                  117 lotes y Laguz con 131 lotes
                 </p>
               </Col>
             </Row>
+          </Col>
+          <Col md={6}>
             <Row className="justify-content-between">
-              <Col md={5}>
+              <Col md={11}>
                 <p>
-                  El siguiente conjunto representa al Reino Vegetal, con Halagaz
-                  de 87 lotes y Nauthiz con 78 lotes.
-                </p>
-                <p>
-                  Se continúa con el conjunto del Reino Animal, Algiz con 117
-                  lotes y Laguz con 131 lotes.
+                  El reino representado en el siguiente es el Reino Humano y es
+                  la Seccion cuatro, con Kanaz de 60 lotes y Mannaz con 137
+                  lotes.
                 </p>
               </Col>
-              <Col md={5}>
+              <Col md={11}>
                 <p>
                   Al final del camino hacia la trascendencia nos encontramos con
-                  el Reino Divino, con las secciones de Perth con 89 lotes,
-                  Raidho que cuenta con 110 lotes y Dagaz con 78 lotes.
+                  el Reino Divino la sección cinco , donde se encuentra el
+                  conjunto de Perth con 89 lotes,el conjunto Raidho que cuenta
+                  con 110 lotes y el conjunto Dagaz con 78 lotes, formando asi
+                  los 11 conjuntos de estos 5 secciones divididos en Reinos.
                 </p>
               </Col>
             </Row>

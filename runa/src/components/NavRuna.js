@@ -9,6 +9,7 @@ const nav = [
   { link: "/#financiamiento", content: "Financiamiento" },
   { link: "/#masterplan", content: "Masterplan" },
   { link: "/#contacto", content: "Contacto" },
+  { link: "/brochure", content: "Brochure" },
 ];
 
 export default function NavRuna() {

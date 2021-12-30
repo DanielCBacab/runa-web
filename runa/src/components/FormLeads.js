@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { Form, Button, Modal } from "react-bootstrap";
 import Axios from "axios";
+import { IconContext } from "react-icons";
 
+import { FaRegCheckCircle } from "react-icons/fa";
 export default function FormLeads() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const url = "https://admin.runaresidencial.com/api/leadapi";
   const [data, setData] = useState({
     name: "",
@@ -24,7 +30,7 @@ export default function FormLeads() {
       productName: "Runa Residencial - Web",
     }).then((res) => {
       console.log(res.data);
-      alert(res.data);
+      handleShow();
     });
   }
 
@@ -38,7 +44,34 @@ export default function FormLeads() {
       className="text-center runa-form runa-form2"
       onSubmit={(e) => submit(e)}
     >
+      <Modal
+        show={show}
+        onHide={handleClose}
+        animation={false}
+        id="modalThankyou"
+      >
+        <Modal.Body className="text-center">
+          <IconContext.Provider
+            value={{
+              className: "my-3 col-12 primary-txt",
+              size: "4rem",
+            }}
+          >
+            <FaRegCheckCircle />
+          </IconContext.Provider>
+          <h2 className="primary-txt text-center">¡Felicidades!</h2>
+          <p className="text-center">
+            Te has registrado con éxito, en breve uno de nuestros asesores te
+            guiará en el proceso para adquirir tu lote.
+          </p>
+          <Button className="secondary-bg btn-lg btn" onClick={handleClose}>
+            Cerrar ventana
+          </Button>
+        </Modal.Body>
+      </Modal>
+
       <h3 className="primary-txt my-4">¡Regístrate!</h3>
+
       <Form.Group>
         <Form.Control
           className="mb-3"
@@ -55,6 +88,7 @@ export default function FormLeads() {
           type="tel"
           id="phone"
           maxlength="10"
+          pattern="[0-9]{0,10}"
           title="Número de teléfono a 10 dígitos"
           onChange={(e) => handle(e)}
           placeholder="Teléfono"
@@ -105,21 +139,6 @@ export default function FormLeads() {
           Políticas de Privacidad.
         </a>
       </small>
-      <Modal.Dialog>
-        <Modal.Header closeButton>
-          <Modal.Title></Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h2 className="text-center primary-txt">¡Felicidades!</h2>
-          <p>
-            Te has registrado con éxito, en breve uno de nuestros asesores te
-            guiarán en el proceso para adquirir tu lote.
-          </p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary">Cerrar</Button>
-        </Modal.Footer>
-      </Modal.Dialog>
     </Form>
   );
 }
