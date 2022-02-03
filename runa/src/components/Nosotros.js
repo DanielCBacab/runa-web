@@ -1,7 +1,9 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import nosotrosCircle from "../img/nosotroscircle.png";
-import nosotros from "../img/nosotros.png";
+import magia from "../img/magia.png";
+import gold from "../img/gold.png";
+import cancun from "../img/cancun.png";
+import runas from "../img/runas.png";
 
 export default function Nosotros() {
   return (
@@ -9,45 +11,89 @@ export default function Nosotros() {
       className="justify-content-center py-5 align-items-center aboutus position-relative g-0 "
       id="nosotros"
     >
-      <img src={nosotros} className="nosotros img-fluid" alt="" />
-      <h2 className="runa-title-left">Nosotros</h2>
-      <Col xs={10} md={5} className="my-md-5 my-4 py-md-5 py-4">
-        <h3 className="mb-3 primary-txt">
-          Un patrimonio con la mejor plusvalía en México.
-        </h3>
-        <p className="subtitle text-white">Nuestra Propuesta</p>
-        <p className="text-white">
-          <strong className="primary-txt"> Runa Residencial</strong>, es un
-          desarrollo en donde no solo la plusvalía es altamente rentable sino
-          toda la magia y mística que constituye este complejo dentro de la
-          tranquilidad de la selva maya y la pasividad de la naturaleza
-          ancestral
-          <br /> <br />
-          Un espacio en donde{" "}
-          <strong className="primary-txt"> la magia y el lujo </strong>convergen
-          para crear un concepto único en esta pequeña ciudad de gran impacto
-          económico.
-        </p>
-        <p className="text-white">
-          Un entorno que va más allá de un espacio de relajación y calma lejos
-          de la ciudad, es un santuario de conexión contigo mismo y los tuyos en
-          donde la vida cotidiana y tú inversión a futuro serán una experiencia
-          sublime lleno de confort, afabilidad y riqueza de alta vibración.
-        </p>
-      </Col>
-      <Col
-        xs={10}
-        md={5}
-        className="text-center justify-content-center text-center  nosotros-circle"
-      >
-        <Col xs={12}>
-          <img src={nosotrosCircle} className="img-fluid" alt="" />
-        </Col>
-        <Col xs={12}>
-          <a className="btn btn-warning" href="/#masterplan">
-            Ver masterplan
-          </a>
-        </Col>
+      <img src={runas} className="img-fluid runas d-none d-md-block" alt="" />
+      <Col xs={12} className="degradadotop"></Col>
+      <Col xs={10} className="zprincipal">
+        <Row className="my-0 py-0 my-md-5 py-md-5 align-items-center ">
+          <Col
+            xs={12}
+            md={8}
+            lg={8}
+            xl={6}
+            className="my-0 py-0 py-md-5 my-md-5"
+          >
+            <h3 className="mb-0 mb-md-3 primary-txt">
+              <strong>Un concepto único y exclusivo</strong>
+            </h3>
+            <p className="text-white">
+              <strong className="primary-txt">Runa Residencial,</strong> es un
+              desarrollo en donde no solo la plusvalía es altamente rentable
+              sino toda la magia y mística que constituye este complejo dentro
+              de la tranquilidad de la selva maya y la pasividad de la
+              naturaleza ancestral.
+            </p>
+          </Col>
+        </Row>
+        <Row className="my-2 py-2 my-md-5 py-md-5 align-items-center g-0 justify-content-between">
+          <Col xs={12} md={12} lg={6} xl={6} className="text-center">
+            <img src={magia} className="img-fluid w-100 spacialglow" alt="" />
+          </Col>
+          <Col xs={12} md={12} lg={5} xl={4} className="my-4 my-md-5">
+            <h3 className="primary-txt">Magia y lujo</h3>
+            <p className="text-light">
+              Un entorno que va más allá de un espacio de{" "}
+              <strong className="primary-txt">relajación y calma </strong>
+              lejos de la ciudad, es un santuario de conexión contigo mismo y
+              los tuyos en donde la vida cotidiana y tú{" "}
+              <strong className="primary-txt">inversión a futuro</strong> serán
+              una experiencia sublime lleno de confort, afabilidad y riqueza de
+              alta vibración.
+              <br />
+              <br />
+              Un espacio en donde la magia y el lujo convergen para crear un
+              concepto único en esta pequeña ciudad de gran impacto económico.
+            </p>
+          </Col>
+        </Row>
+        <img
+          src={gold}
+          className="img-fluid gold1 text-center d-none d-md-block img-responsive "
+          alt=""
+        />
+        <Row className="my-2 py-2 my-md-5 py-md-5 align-items-center position-relative g-0">
+          <Col md={6} lg={6} xl={5}>
+            <strong>
+              <h3 className="primary-txt">Quintana Roo</h3>
+            </strong>
+            <p className="text-light">
+              Localizado en una zona de única, asegurando la plusvalía de tu
+              inversión por su cercanía con la ciudad de Cancún y los destinos
+              más visitados de la{" "}
+              <strong className="primary-txt">
+                Riviera Maya, como Playa del Carmen y Puerto Morelos.
+              </strong>
+            </p>
+          </Col>
+          <Col md={6}></Col>
+        </Row>
+        <Row className="my-2 py-2 my-md-5 py-md-5 align-items-center g-0 justify-content-between">
+          <Col xs={12} md={12} lg={5} xl={4} className="my-4 my-md-5">
+            <p className="text-light">
+              Encuentra la paz y armonía que estabas buscando en la profundidad
+              de la selva maya. Además, tendrás a tu alcance los mejores parques
+              naturales y de aventuras de México.
+              <br />
+              <br /> Con{" "}
+              <strong className="primary-txt">Runa Residencial,</strong> eres
+              parte de una comunidad ecológica que vive en armonía con la mágica
+              selva maya. Relájate o sal a la aventura en áreas de ecoturismo,
+              senderos, cenotes y playas.
+            </p>
+          </Col>
+          <Col xs={12} md={12} lg={6} xl={6} className="text-center">
+            <img src={cancun} className="img-fluid w-100 spacialglow" alt="" />
+          </Col>
+        </Row>
       </Col>
     </Row>
   );

@@ -93,16 +93,15 @@
 
 h1 {
     font-family: var(--primary-font)  !important;
-    font-weight: 300 !important;
-    font-size: 6.75rem;
+    font-weight: 600;
+    font-size: 5.75rem;
     letter-spacing: -1.5px;
-
-    
+    filter: drop-shadow(black 0px 10px 16px)
 }
 
 h2 {
     font-family: var(--primary-font)  !important;
-    font-weight: 300 !important;
+ 
     font-size: 4.25rem;
     letter-spacing: -0.5px;
 }
@@ -143,11 +142,12 @@ h6 {
     font-size: 1.125rem;
     letter-spacing: 0.15px;
     line-height: 140%; 
+    padding:0px;margin:0px;
 }
 
 .body-uno, p{
     font-family: var(--secondary-font)  !important;
-    font-weight: normal;
+    font-weight: 300;
     letter-spacing: 0.5px;
 
 }
@@ -203,7 +203,14 @@ h6 {
     border-width: 1px;
     border-style: solid;
     padding: 35px 40px;
+    background: linear-gradient(180deg, #100F46 0%, rgba(16, 15, 70, 0) 100%);
+    filter: drop-shadow(0px 18px 18px rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(61px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
 }
+
+
 
 .runa-form textarea, .runa-form input{
     background-color: #00163187;
@@ -221,7 +228,20 @@ h6 {
     background-image: url('../img/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height:100vh;
+}
+
+.banner-brochure{
+    background-image: url('../img/crystal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:24px;
+}
+
+.banner-brochure p{
+    font-size:2rem;
+    font-weight:500;
+    text-shadow: black 10 10 10;
 }
 
 .aboutus{
@@ -231,16 +251,73 @@ h6 {
 }
 
 .amenities{
-    background-color: #00000b;
-    padding: 50px;
-    z-index: 10;
-    border-style: solid;
-    border:2px solid #000;
-    outline: 1px solid var(--primary-color);
-    outline-offset: -30px;
+    background-image: url('../img/aboutus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 200px 200px;
     
 }
 
+.rounded-6{
+    border-radius:24px;
+}
+
+.shadow{
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25));
+}
+
+.gris{
+    background: #E5E5E5;  
+}
+
+.zprincipal{
+    z-index: 99;
+}
+
+.degradadobottom{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.99%, #000000 100%);
+    z-index: 1;
+    height: 380px;
+    bottom:0px;
+    position: absolute;
+}
+
+.spacialglow{
+    -webkit-box-shadow: 0px 0px 190px -37px rgba(126 0 114);
+-moz-box-shadow: 0px 0px 190px -37px rgba(126 0 114);
+box-shadow: 0px 0px 190px -37px rgba(126 0 114);
+width: 100%;height: 100%;
+}
+
+.degradadotop{
+    background: linear-gradient(180deg, #000000 0%, #000000 0.01%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+    height: 615px;
+    top:0px;
+    position: absolute;
+}
+
+.gradiente-gris{
+    background: linear-gradient(360deg, #E9EFFF 0%, rgba(196, 196, 196, 0) 100%);   
+}
+
+.gradiente-gris-down{
+    background: linear-gradient(180deg, #E9EFFF 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+
+
+.letras-runicas{
+    background-image: url('../img/letras.png');
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    height: 295px;
+}
 .wood1{
     position: absolute;
     z-index: 0;
@@ -302,12 +379,53 @@ h6 {
     left: -10px;
 }
 
+.gold1{
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    height: 113px;
+    width: auto;
+    z-index: 0;
+    margin:0px;
+    padding:0px;
+
+
+}
+
+.gold-middle{
+    overflow: hidden;
+    position: absolute;
+    top:-40px;
+    height: 95px;
+    width: auto;
+    z-index: 0;
+    margin:0px;
+    padding:0px;
+
+}
+
+.runas{
+    width:386px;
+    height: 600px;
+    position: absolute;
+    top:-80px;
+    right:0px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+
+
 #financiamiento{
-    background-image: url("../img/financiamiento.png");
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
    
+}
+
+.runas-financiamiento{
+    border: 4px solid #C48C2D;
 }
 
  .circle{
@@ -355,8 +473,8 @@ h6 {
 
 }
 
-#nosotros{
-    height: 100vh;
+.card-img-overlay .h5{
+    bottom:50px !important;
 }
 
 .nosotros-circle{
@@ -369,11 +487,21 @@ h6 {
 background: linear-gradient(180deg, rgba(0,31,68,1) 47%, rgba(0,0,0,1) 100%);
 }
 
+.degradado-asesores{background: linear-gradient(180deg, rgba(20, 20, 154, 0) 54.17%, #000466 100%);}
+
 .runa-privacy{
     background-image: url("../img/runa-privacy.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+.nav-runa{
+    background: linear-gradient(180deg, rgba(16, 15, 70, 0.82) 0%, rgba(13, 12, 60, 0.1804) 100%);
+    backdrop-filter: blur(12px);
+    /* Note: backdrop-filter has minimal browser support 
+    
+    border-radius: 12px;  */
 }
 
 /* Custom Scroll Navigator Bar */
@@ -413,29 +541,138 @@ background: linear-gradient(180deg, rgba(0,31,68,1) 47%, rgba(0,0,0,1) 100%);
 
     /*RESPONSIVE*/
     
-    @media all and (min-width:1024px) {}
+    @media all and (min-width:1024px) and (max-width:1439px) {
+        .banner-top{
+            background-position: 80% 0%;
+            background-size: cover !important;background-repeat: no-repeat;
+            background-image: url("../img/banner.jpg");
+            background-color: black;
+           
+        }
+        h1 {    
+        font-size: 2.75rem;
+    }
+
+
+        .gold1{
+
+            height: 80px;
+            width: auto;
+            margin-top:80px;
+        
+        
+        }
+        .runas{
+            width:326px;
+            height: 530px;
+            position: absolute;
+            top:0px;
+            right:0px;
+            overflow: hidden;
+            z-index: 9999;
+        }
+
+        .amenities{
+            border-radius: 0 0 130px 130px;
+        }
+    }
     
-    @media all and (min-width:768px) and (max-width:1023px) {}
+    @media all and (min-width:768px) and (max-width:1023px) 
+    {
+        .banner-top{
+            background-position: bottom right;
+            background-size: cover !important;background-repeat: no-repeat;
+            background-image: url("../img/bannermobile.jpg");
+            background-color: black;
+           
+        }
+
+        h1 {
+        font-size: 2.75rem;}
+        .gold1{
+            height: 60px;
+            width: auto;
+            margin-top:110px;
+        }
+
+        .amenities{
+            border-radius: 0 0 130px 130px;
+        }
+
+
+
+    }
     
-    @media all and (min-width:426px) and (max-width:767px) {}
+    @media all and (min-width:426px) and (max-width:767px) {
+        h1 {
+            font-size: 1.75rem;
+        }
+
+
+    }
     
     @media all and (max-width: 425px) {
         .navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler, .navbar-toggler:focus{
             border-color:transparent !important;
         }
 
+        h1 {
+            font-family: var(--primary-font)  !important;
+            font-weight: 600;
+            font-size: 2rem;
+            letter-spacing: -1.5px;  
+            filter: drop-shadow(black 0px 10px 16px)
+        }
 
         h2{
-            font-size: 2.5rem !important;
+            font-weight: 600;
+            font-size: 1.5rem !important;
         }
         h3{
-            font-size: 2rem !important;
+            font-weight: 600;
+            font-size: 1.45rem !important;
+        }
+        h4{
+            font-weight: 600;
+            font-size: 1.3rem !important;
         }
 
+        h4{
+            font-weight: 600;
+            font-size: 1.3rem !important;
+        }
+
+        h6{
+            font-weight: 500;
+            font-size: 1rem !important;
+        }
+
+        .rounded-6{
+            border-radius:16px;
+        }
+    
+        .gold-middle{
+            height: 45px;
+            width: 200px;
+            top:-15px;
+        }
         .banner-top{
-            height: 100% !important;
+            height:100%;
+            background-position: top center;
+            background-size: contain !important;background-repeat: no-repeat;
+            background-image: url("../img/bannermobile.jpg");
+            background-color: black;
+           
+        }
+        .runa-form{
+            margin-top:480px;
         }
 
+
+        .amenities{
+            border-radius: 0 0 50px 50px;
+        }
+        
         .nosotros{
             width: 100%;
             bottom:0px;
@@ -443,6 +680,24 @@ background: linear-gradient(180deg, rgba(0,31,68,1) 47%, rgba(0,0,0,1) 100%);
 
         #nosotros{
             height: auto;
+        }
+
+        .runas{
+            width:210px;
+            height: 315px;
+            position: absolute;
+            top:-80px;
+            right:0px;
+            overflow: hidden;
+            z-index: 9999;
+        }
+
+        .gold1{
+            width:148px;
+            height: 30px;
+            left: 25%;
+            right: 25%;
+
         }
         
          /*  RUNA FOTOS  */
