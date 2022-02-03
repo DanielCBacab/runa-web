@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Ratio } from "react-bootstrap";
-import start from "../img/runa-estrella.png";
+
 import disponible from "../img/mp-diamante-oro.svg";
 import nodisponible from "../img/mp-diamante-cobalto.svg";
 import vendido from "../img/mp-diamante.svg";
@@ -8,16 +8,16 @@ import vendido from "../img/mp-diamante.svg";
 export default function Masterplan() {
   return (
     <Row
-      className="justify-content-center align-items-center  g-0 position-relative p-5 my-5 masterplan"
+      className="justify-content-center align-items-center g-0 position-relative py-2 my-2 py-md-5 my-md-5"
       id="masterplan"
     >
-      <h2 className="runa-title-right">Planes</h2>
-
-      <Col md={3}></Col>
-      <Col md={4}>
-        <h2 className="text-center primary-txt">Masterplan</h2>
+      <Col md={0} lg={0} xl={3} className="d-none d-md-block my-md"></Col>
+      <Col xs={11} md={12} lg={5} className="py-5">
+        <h2 className="text-center secondary-txt">
+          <strong>Masterplan</strong>
+        </h2>
       </Col>
-      <Col md={3} className="text-light align-items-center">
+      <Col xs={10} lg={5} xl={4} className="align-items-center">
         <Row className="g-0">
           <Col>
             <p>
@@ -36,7 +36,7 @@ export default function Masterplan() {
           </Col>
         </Row>
       </Col>
-      <Col md={10} className="p-0 p-md-5 ">
+      <Col xs={12} md={12} className="text-center">
         <Ratio aspectRatio="16x9">
           <iframe
             src="https://admin.runaresidencial.com/planmaestroactualizado/1"
@@ -44,14 +44,14 @@ export default function Masterplan() {
             title="masterplan Runa Residencial"
           ></iframe>
         </Ratio>
-      </Col>
-      <Col md={10} className="justify-content-end d-flex">
-        <a
-          className="align-self-end btn btn-link text-decoration-none text-light"
-          href="#"
-        >
-          <img src={start} width="25px" alt="" /> Volver al inicio
-        </a>
+        <div className="my-2 d-block d-md-none">
+          <p>
+            <strong>¿Tienes problemas para ver el masterplan completo?</strong>
+          </p>
+          <a className="btn btn-lg btn-warning" href="/masterplan">
+            Ver masterplan completo
+          </a>
+        </div>
       </Col>
     </Row>
   );

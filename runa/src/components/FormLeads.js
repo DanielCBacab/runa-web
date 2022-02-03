@@ -41,7 +41,7 @@ export default function FormLeads() {
   }
   return (
     <Form
-      className="text-center runa-form runa-form2"
+      className="runa-form  p-5 mb-5 mb-md-auto"
       onSubmit={(e) => submit(e)}
     >
       <Modal
@@ -70,8 +70,11 @@ export default function FormLeads() {
         </Modal.Body>
       </Modal>
 
-      <h3 className="primary-txt my-4">¡Regístrate!</h3>
-
+      <h4 className="primary-txt my-4">¡Regístrate y empieza a invertir!</h4>
+      <p className="text-light">
+        Llena el siguiente formulario, y en breve uno de nuestros asesores se
+        comunicará contigo.
+      </p>
       <Form.Group>
         <Form.Control
           className="mb-3"
@@ -126,7 +129,7 @@ export default function FormLeads() {
           rows={3}
         ></Form.Control>
       </Form.Group>
-      <Button variant="warning" type="submit" className="btn-lg">
+      <Button variant="warning" type="submit" className="btn-lg btn w-100">
         Enviar formulario
       </Button>
       <br />

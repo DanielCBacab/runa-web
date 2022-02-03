@@ -3,18 +3,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import NavRuna from "../components/NavRuna";
 export default function Brochure() {
   return (
-    <Container fluid className="degradado g-0">
+    <Container fluid className="g-0 vh-100 degradado">
       <NavRuna />
-      <Row className="p-0 m-0 g-0">
-        <Col className="vh-100" md={12}>
+      <Row className="p-0 m-0 g-0 justify-content-center align-items-center">
+        <Col xs={12} md={12} className="mt-5 pt-5 vh-100">
           <iframe
-            src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=zji2j3nd1j"
+            src="https://admin.runaresidencial.com/planmaestroactualizado/1"
             width="100%"
             height="100%"
             seamless="seamless"
             scrolling="no"
             frameBorder="0"
-            title="Brochure"
+            title="masterplan"
+            allowfullscreen
           ></iframe>
         </Col>
       </Row>
