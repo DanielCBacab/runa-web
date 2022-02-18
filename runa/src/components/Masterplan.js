@@ -11,13 +11,12 @@ export default function Masterplan() {
       className="justify-content-center align-items-center g-0 position-relative py-2 my-2 py-md-5 my-md-5"
       id="masterplan"
     >
-      <Col md={0} lg={0} xl={3} className="d-none d-md-block my-md"></Col>
       <Col xs={11} md={12} lg={5} className="py-5">
         <h2 className="text-center secondary-txt">
           <strong>Masterplan</strong>
         </h2>
       </Col>
-      <Col xs={10} lg={5} xl={4} className="align-items-center">
+      <Col xs={10} md={3} className="align-items-center">
         <Row className="g-0">
           <Col>
             <p>
@@ -36,8 +35,8 @@ export default function Masterplan() {
           </Col>
         </Row>
       </Col>
-      <Col xs={12} md={12} className="text-center">
-        <Ratio aspectRatio="16x9">
+      <Col xs={12} md={12} lg={8} xl={7} className="text-center">
+        <Ratio aspectRatio={80}>
           <iframe
             src="https://admin.runaresidencial.com/planmaestroactualizado/1"
             scrolling="no"
