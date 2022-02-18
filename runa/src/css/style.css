@@ -147,7 +147,7 @@ h6 {
 
 .body-uno, p{
     font-family: var(--secondary-font)  !important;
-    font-weight: 300;
+    font-weight: medium;
     letter-spacing: 0.5px;
 
 }
