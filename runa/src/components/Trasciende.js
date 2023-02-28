@@ -43,10 +43,8 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  Dentro de la primera sección, se encuentra el reino mineral
-                  con el conjunto <strong>Thurisaz</strong> de 10 lotes,
-                  acompañado por el conjunto <strong>Fehu,</strong> de 10 lotes
-                  también.
+                  Dentro de la quinta sección, se encuentra el{" "}
+                  <strong>Reino Mineral</strong> con 20 lotes.
                 </p>
               </Col>
             </Row>
@@ -56,8 +54,8 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  La siguiente sección es el <strong>Reino Vegetal,</strong> con{" "}
-                  <strong>42 lotes.</strong>
+                  La siguiente sección que es la cuarta es el{" "}
+                  <strong>Reino Vegetal,</strong> con 42 lotes.
                 </p>
               </Col>
             </Row>
@@ -67,8 +65,8 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  Continuamos con los <strong>42 lotes</strong> de la sección
-                  tres, <strong>el Reino Animal.</strong>
+                  Continuamos con los 42 lotes de la sección tres, el{" "}
+                  <strong>Reino Animal.</strong>
                 </p>
               </Col>
             </Row>
@@ -79,7 +77,7 @@ export default function Trasciende() {
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
                   El <strong>Reino Humano</strong> está presente en la sección
-                  cuatro con <strong>34 lotes.</strong>
+                  dos con 34 lotes.
                 </p>
               </Col>
             </Row>
@@ -90,8 +88,8 @@ export default function Trasciende() {
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
                   Al final del camino, rumbo a la trascendencia, nos encontramos
-                  con el <strong>Reino Divino,</strong> la sección cinco,{" "}
-                  <strong>con 33 lotes.</strong>
+                  con el <strong>Reino Divino,</strong>, la primer sección, con
+                  33 lotes.
                 </p>
               </Col>
             </Row>

@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import magia from "../img/magia.png";
 import gold from "../img/gold.png";
-import cancun from "../img/cancun.png";
+import yucatan from "../img/yucatan.png";
 import runas from "../img/runas.png";
 
 export default function Nosotros() {
@@ -88,7 +88,7 @@ export default function Nosotros() {
             </p>
           </Col>
           <Col xs={12} md={12} lg={6} xl={6} className="text-center">
-            <img src={cancun} className="img-fluid w-100 spacialglow" alt="" />
+            <img src={yucatan} className="img-fluid w-100 spacialglow" alt="" />
           </Col>
         </Row>
       </Col>
