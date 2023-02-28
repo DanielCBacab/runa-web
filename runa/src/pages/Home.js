@@ -12,7 +12,7 @@ import NavRuna from "../components/NavRuna";
 
 import FinantialPlans from "../components/FinantialPlans";
 import Masterplan from "../components/Masterplan";
-import Asesores from "../components/Asesores";
+// import Asesores from "../components/Asesores";
 import Footer from "../components/Footer";
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
       <Ubicacion />
       <FinantialPlans />
       <Masterplan />
-      <Asesores />
+      {/* <Asesores /> */}
       <Footer />
     </Container>
   );

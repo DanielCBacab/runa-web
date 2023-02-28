@@ -63,18 +63,18 @@ export default function Footer() {
             <h4 className="secondary-txt">Teléfonos</h4>
             <h6>
               <a
-                href="whatsapp:9981172398"
+                href="whatsapp:9999490693"
                 className="secondary-txt text-decoration-none"
               >
-                Whatsapp: 998 117 2398
+                Whatsapp: (999) 949 0693
               </a>
             </h6>
             <h6>
               <a
-                href="tel:9988856186"
+                href="tel:9996674094"
                 className="secondary-txt text-decoration-none"
               >
-                Oficina: 998 885 6186
+                Oficina: (999) 667 4094
               </a>
             </h6>
           </Col>
@@ -105,10 +105,11 @@ export default function Footer() {
               </a>
             </h6>
           </Col>
-          <Col md={3} md={6} lg={2} xl={3}>
+          <Col xs={12} md={6} lg={2} xl={3}>
             <h4 className="secondary-txt">Oficina</h4>
             <h6 className="secondary-txt">
-              Av Colegios, Cancún, Q. Roo Número 123, 2do Piso.
+              Plaza Luxus Altabrisa, Calle 20 235 - Local 919, entre 7 y 15,
+              Col. Altabrisa, C.P. 97130 Mérida, Yucatán.
             </h6>
           </Col>
         </Row>
@@ -121,12 +122,12 @@ export default function Footer() {
           >
             <span>
               <p>
-                Todos los Derechos Reservados Runa Residencial
+                Todos los Derechos Reservados Runa Yucatán
                 <a
                   href="/politicas-privacidad"
                   className="text-light text-decoration-none mx-1"
                 >
-                  Políticas de pivacidad
+                  Política de Privacidad
                 </a>
               </p>
             </span>

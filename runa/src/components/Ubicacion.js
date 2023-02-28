@@ -23,27 +23,25 @@ export default function Ubicacion() {
             </h3>
             <p className="secondary-txt">
               <strong>
-                El atractivo de <strong>Runa Residencial</strong> radica en su
+                El atractivo de <strong>Runa Yucatán</strong> radica en su
                 majestuoso paisaje natural donde la armonía florece y la magia
                 se transmite, por eso brindamos un místico lugar lejos del
-                estrés, caos y problemas de la ciudad, pero solo minutos del
-                Aeropuerto Internacional y la Zona Hotelera de Cancún, con sus
-                hermosas playas y clubes nocturnos.
+                estrés, caos y problemas de la ciudad, pero a solo minutos del
+                increíble Puerto de Telchac, Yucatán.
               </strong>
             </p>
             <p className="secondary-txt">
-              Vive la experiencia de la asombrosa{" "}
-              <strong>Ruta de los Cenotes en Puerto Morelos,</strong> al mismo
-              tiempo explora la emocionante ciudad de{" "}
-              <strong>Playa del Carmen </strong> a menos de 50 minutos del
-              residencial, garantizando una alta plusvalía para tu inversión
+              Vive la experiencia de recorrer los cenotes ancestrales y, al
+              mismo tiempo, explora la emocionante arqueología y cultura que te
+              ofrece Yucatán, garantizando una alta plusvalía para tu inversión
               inmobiliaria.
             </p>
             <p className="secondary-txt">
               Disfruta una nueva vida en la que podrás recargarte de la buena
               vibra que transmite la flora y fauna de la región, viviendo un
               momento de calma por senderos, cenotes y los impresionantes
-              parques temáticos de la zona.
+              parques temáticos de la zona y, sobre todo, la cercanía con la
+              playa.
             </p>
           </Col>
           <Col xs={12} md={11} lg={6} xl={6}>
