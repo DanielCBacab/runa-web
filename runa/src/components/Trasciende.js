@@ -23,11 +23,14 @@ export default function Trasciende() {
                   <strong>Trasciende</strong>
                 </h3>
                 <p>
-                  <strong>Runa Residencial</strong> está establecido por{" "}
-                  <strong>11 conjuntos dentro de 5 secciones,</strong> con
-                  amplios lotes que ofrecen la oportunidad de crear un espacio
-                  único donde la comodidad y tranquilidad es la base de un buen
-                  hogar. <br />
+                  <strong>Runa Yucatán</strong> está conformada por{" "}
+                  <strong>
+                    5 secciones con 171 amplios lotes y 12 áreas verdes comunes
+                  </strong>{" "}
+                  que te ofrecen la oportunidad de crear un espacio único donde
+                  la comodidad y la tranquilidad son la base para que construyas
+                  tu nuevo hogar.
+                  <br />
                   <br />
                   El nombre de cada sección representa
                   <strong>Los Reinos de la Naturaleza.</strong>
@@ -40,10 +43,10 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  Dentro de la primer sección del reino mineral nos encontramos
-                  con la sección uno: <strong>Thurisaz</strong> con 91 lotes,
-                  siendo acompañado por
-                  <strong>Fehu,</strong> conjunto 2 con 156 lotes.
+                  Dentro de la primera sección, se encuentra el reino mineral
+                  con el conjunto <strong>Thurisaz</strong> de 10 lotes,
+                  acompañado por el conjunto <strong>Fehu,</strong> de 10 lotes
+                  también.
                 </p>
               </Col>
             </Row>
@@ -53,9 +56,8 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  La siguiente sección representa al Reino Vegetal, con{" "}
-                  <strong>Halagaz</strong> de 87 lotes y{" "}
-                  <strong>Nauthiz</strong> con 78 lotes.
+                  La siguiente sección es el <strong>Reino Vegetal,</strong> con{" "}
+                  <strong>42 lotes.</strong>
                 </p>
               </Col>
             </Row>
@@ -65,9 +67,8 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  Se continúa con la sección tres: del Reino Animal,{" "}
-                  <strong>Algiz</strong> con 117 lotes y <strong>Laguz</strong>{" "}
-                  con 131 lotes.
+                  Continuamos con los <strong>42 lotes</strong> de la sección
+                  tres, <strong>el Reino Animal.</strong>
                 </p>
               </Col>
             </Row>
@@ -77,9 +78,8 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  El reino representado en el siguiente es el Reino Humano y es
-                  la Seccion cuatro, con <strong>Kanaz</strong> de 60 lotes y{" "}
-                  <strong>Mannaz</strong> con 137 lotes.
+                  El <strong>Reino Humano</strong> está presente en la sección
+                  cuatro con <strong>34 lotes.</strong>
                 </p>
               </Col>
             </Row>
@@ -89,12 +89,9 @@ export default function Trasciende() {
               </Col>
               <Col xs={8} md={9} xl={7}>
                 <p className="subtitle">
-                  Al final del camino hacia la trascendencia nos encontramos con
-                  el Reino Divino la sección cinco, donde se encuentra el
-                  conjunto de <strong>Perth</strong> con 89 lotes, el conjunto{" "}
-                  <strong>Raidho</strong> que cuenta con 110 lotes y el conjunto{" "}
-                  <strong>Dagaz</strong> con 78 lotes, formando asi los 11
-                  conjuntos de estas 5 secciones divididos en Reinos.
+                  Al final del camino, rumbo a la trascendencia, nos encontramos
+                  con el <strong>Reino Divino,</strong> la sección cinco,{" "}
+                  <strong>con 33 lotes.</strong>
                 </p>
               </Col>
             </Row>

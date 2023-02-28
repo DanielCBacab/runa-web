@@ -11,7 +11,7 @@ const nav = [
   { link: "/#ubicacion", content: "Ubicación" },
   { link: "/#financiamiento", content: "Financiamiento" },
   { link: "/#masterplan", content: "Masterplan" },
-  { link: "/#equipo", content: "Equipo" },
+  // { link: "/#equipo", content: "Equipo" },
   { link: "/brochure", content: "Brochure" },
 ];
 

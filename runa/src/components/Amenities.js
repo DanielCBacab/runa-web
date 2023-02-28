@@ -106,24 +106,23 @@ export default function Amenities() {
             <h3 className="mb-3 primary-txt">Amenidades</h3>
             <p className="text-white">
               <strong>
-                Las amenidades están pensandas para concebir un ambiente lleno
-                de equilibrio y buena energía.
+                Las amenidades están pensadas para concebir un ambiente lleno de
+                equilibrio y buena energía.
               </strong>
             </p>
             <p className="text-white">
-              Con <strong className="primary-txt">Runa Residencial</strong>, se
-              transmite magia y tranquilidad en cada una de las actividades que
-              se lleven a cabo dentro de las instalaciones, el objetivo es
-              formar una comunidad completa donde se pueda convivir en armonía
-              con los demás residentes junto con la hermosa y misteriosa selva
-              maya.
+              En <strong>Runa Yucatán</strong> se transmite magia y tranquilidad
+              en cada una de las actividades que se llevan a cabo dentro de las
+              instalaciones. El objetivo es formar una comunidad completa donde
+              se pueda convivir en armonía con los demás residentes junto con la
+              hermosa y misteriosa Selva Maya.
             </p>
             <p className="text-white">
-              Se dice que convivir con la naturaleza aumenta el estima y el
+              Se dice que convivir con la naturaleza aumenta la estima y el
               autocontrol, estimula tu creatividad, aumenta tu concentración y
-              reduce el estrés por eso y más te ofrecemos más de 8 Hectáreas de
-              Mágicos Amaneceres y atardeceres internados en jardines naturales
-              en medio de la hipnotizante selva.
+              reduce el estrés. Por eso y más, te ofrecemos mágicos amaneceres y
+              atardeceres sumergidos en jardines naturales dentro de la
+              hipnotizante selva.
             </p>
           </Col>
           <Col xs={12} md={6}>

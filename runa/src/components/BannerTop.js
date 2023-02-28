@@ -14,7 +14,7 @@ export default function BannerTop() {
         className="mt-5 py-5 zprincipal d-none d-md-block"
       >
         <h1 className="primary-txt">
-          Un patrimonio con la mejor plusvalía en Cancún.
+          Un patrimonio con la mejor plusvalía de Telchac, Yucatán.
         </h1>
         <p className="text-light ">
           Un espacio en donde la magia y el lujo convergen para crear un
