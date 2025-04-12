@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Row, Col } from "react-bootstrap";
-import mpvertical from "../img/mpvertical.jpg";
+import mpvertical from "../img/mpvertical.jpeg";
 import sec1 from "../img/sec1.svg";
 import sec2 from "../img/sec2.svg";
 import sec3 from "../img/sec3.svg";

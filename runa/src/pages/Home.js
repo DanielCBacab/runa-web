@@ -25,8 +25,8 @@ export default function App() {
       <Amenities />
       <Ubicacion />
       <FinantialPlans />
-      {/*<Masterplan />
-     <Asesores /> */}
+      <Masterplan />
+      {/*<Asesores /> */}
       <Footer />
     </Container>
   );
